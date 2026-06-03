@@ -240,7 +240,7 @@ else:
     print("\nEscolha a região:")
     for num, info in regioes.items():
         print(f"{num} - {info['nome']}")
-    regiao = input("Digite 1 ou 2: ")
+    regiao = input("Digite o número correspondente a região: ")
 
     if regiao not in regioes:
         print("Região inválida. Reinicie o programa e tente novamente.")
