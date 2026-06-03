@@ -12,15 +12,14 @@ Co = int(input('Por último, sobre sua CONSTITUIÇÃO?\nDigite aqui: '))
 
 nivel = int(input('Agora, me diga o seu nível (começando do nível 1): '))
 
-N = nivel - 1
-
 #Cálculo dos atributos, resistências, movimentação, etc:
 print('Vamos calcular os seus \033[34mstatus\033[0m agora: ')
 
-mana = 20 + 5 * (I + Ca) + (10 * N)
-vida = 20 + (5 * Co) + (5 * N)
-stamina = 20 + 5 * (A + F) + (10 * N)
-Fr = ((I*Ca)*nivel)
+N = nivel - 1
+mana = 20 + 5 * (I + Ca) + (10 * N) #20 + 5 x I e Ca
+vida = 20 + (5 * Co) + (5 * N) #20 + 5 x Co
+stamina = 20 + 5 * (A + F) + (10 * N) #20 + 5 x A e F
+Fr = 100 + ((I // 5) * 5 + (Ca // 5) * 5) # Base 100% e aumenta em 5% a cada 5 pontos em inteligência ou carisma.
 rf = Co + F * 2
 rm = Co + I
 m = 3 + A
@@ -29,10 +28,11 @@ af = 1
 
 # Entrega dos resultados:
 print('='*20)
+
 print('Sua \33[36mMANA\33[0m inicial é: \033[32m{}\033[0m'.format(mana))
 print('Sua \33[36mVIDA\33[0m inicial: \033[32m{}\033[0m'.format(vida))
 print('Sua \33[36mSTAMINA\33[0m é: \033[32m{}\033[0m'.format(stamina))
-print('Seu \33[36mFIO DE RAZÃO\33[0m é \033[32m{}\033[0m'.format(Fr))
+print('Seu \33[36mFIO DE RAZÃO\33[0m é \033[32m{}%\033[0m'.format(Fr))
 
 print('='*20)
 
