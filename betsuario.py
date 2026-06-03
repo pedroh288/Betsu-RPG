@@ -1,9 +1,8 @@
 import json
 
 # Carrega o arquivo
-with open("betsuario.json", "r", encoding="utf-8") as arquivo:
+with open("json/betsuario.json", "r", encoding="utf-8") as arquivo:
     betsuario = json.load(arquivo)
-
 
 def escolher_opcao(opcoes, titulo):
     print(f"\n=== {titulo} ===")
