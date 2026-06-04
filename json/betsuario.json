@@ -1,0 +1,591 @@
+{
+    "Askelon": {
+       "Costa Sharon": {
+            "Dourado das Falésias": {
+                "Características": "É um peixe de escamas douradas que se alimenta de pequenos crustáceos imbuídos de mana nas pedras.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Baixa",
+                "Uso na Culinária": "Quando cozido ou assado, restaura 15 de SACIEDADE.",
+                "Efeito": "Se consumido fresco, concede um bônus de +2 em testes de Vigor por 1 hora devido à pureza da sua carne."
+            },
+            "Arenque dos Ecos": {
+                "Características": "Um peixe prateado e pequeno que nada em cardumes imensos. Eles emitem um zumbido sônico ao movimentar suas escamas.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Média",
+                "Dificuldade de Pesca": "Média+, para melhor eficiência usar redes de pesca.",
+                "Uso Especial": "Bruxos e alquimistas podem utilizar os olhos para criar o Colírio da Percepção, que ajuda a identificar ilusões.",
+                "Efeito": "Consumir o arenque cru causa uma perda de 2% de FORÇA."
+            },
+            "Peixe-Coelho Manchado": {
+                "Características": "Um peixe invasor que possui espinhos venenosos nas barbatanas dorsais.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Média+, risco de envenenamento ao manusear.",
+                "Uso na Culinária": "Se limpo corretamente (Exige caminho do cozinheiro), torna-se uma iguaria que recupera 30 de SACIEDADE."
+            },
+            "Salmonete de Fogo": {
+                "Características": "Um peixe de cor avermelhada intensa que vive em águas rasas e quentes. É o peixe favorito dos recrutas dos Guardas Reais durante os acampamentos na costa.",
+                "Localidade": "Muito comum próximo às áreas mais rasas de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Baixa",
+                "Efeito": "Sua carne é naturalmente quente. Comer este peixe remove instantaneamente o debuff de Frio/Hipotermia e recupera 10 de STAMINA."
+            }
+       },
+       "Província, Floresta e Caverna": {
+            "Gambá": {
+                "Características": "Apenas um gambá tranquilo porém esguio.",
+                "Altura": "80 CM",
+                "Localidade": [
+                    "Províncias",
+                    "Florestas"
+                ],
+                "Raridade": "Fácil",
+                "Drops": [
+                    "Glândula de Odor",
+                    "Couro Comum"
+                ]
+            },
+            "Lobo ": {
+                "Características": "São grandes,ágeis e possuem uma pelagem amarronzada, costumam andar em bando e abater suas presas fazendo emboscadas com ataques coordenados.",
+                "Altura": "2 M",
+                "Localidade": ["Províncias"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Garras de Fera",
+                    "Presas de Fera",
+                    "Couro Incomum"
+                ]
+            },
+            "Bandido": {
+                "Características": "Um bandido procurando itens de valor e recursos.",
+                "Classe": "Ladino",
+                "Altura": "1.70~1.80 M",
+                "Localidade": [
+                    "Arredores dos reinos",
+                    "Florestas",
+                    "Províncias",
+                    "Vilarejos"
+                ],
+                "Raridade": "Média",
+                "Drops": ["20~50 Moedas"]
+            },
+            "Rato Gigante": {
+                "Características": "Um rato enorme capaz de devorar cães.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Florestas",
+                    "Províncias",
+                    "Cavernas"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Glândula de Veneno",
+                    "Couro Incomum"
+                ]
+            },
+            "Rei dos Ratos (ELITE)": {
+                "Características": "Uma anomalia genética, um amálgama de ratos horripilantes, uma existência agonizante causada por um erro da natureza.",
+                "Altura": "5 M",
+                "Localidade": [
+                    "Florestas",
+                    "Províncias",
+                    "Cavernas"
+                ],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Glândula de Veneno +1",
+                    "Presas do Roedor",
+                    "Couro Raro"
+                ]
+            },
+            "Morcego Gigante": {
+                "Características": "Um morcego enorme capaz de devorar humanos.",
+                "Altura": "2 M",
+                "Localidade": [
+                    "Cavernas - Noite",
+                    "Florestas - Noite"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Asas de Morcego",
+                    "Couro Incomum"
+                ]
+            },
+            "Aranha Gigante": {
+                "Características": "Uma enorme aranha devoradora de humanos.",
+                "Altura": "4 M",
+                "Localidade": ["Cavernas"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Fios de Prata",
+                    "Glândula de Veneno",
+                    "Olhos de Aranha",
+                    "Presas de Aranha"
+                ]
+            },
+            "Aranha Gigante (ELITE)": {
+                "Características": "Uma enorme aranha devoradora de humanos que possui presas afiadas e uma carapaça rígida como uma rocha, sua peçonha pode ser letal caso não tome cuidado.",
+                "Altura": "6 M",
+                "Localidade": ["Cavernas"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Glândula de Veneno +1",
+                    "Glândula de Feromônio",
+                    "Olhos de Aranha",
+                    "Presas de Aranha",
+                    "Fios de Prata"
+                ]
+            }
+       }
+    },
+    "Netanya": {
+        "Praias Heliya": {
+            "Dourado das Falésias": {
+                "Características": "É um peixe de escamas douradas que se alimenta de pequenos crustáceos imbuídos de mana nas pedras.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Baixa",
+                "Uso na Culinária": "Quando cozido ou assado, restaura 15 de SACIEDADE.",
+                "Efeito": "Se consumido fresco, concede um bônus de +2 em testes de Vigor por 1 hora devido à pureza da sua carne."
+            },
+            "Arenque dos Ecos": {
+                "Características": "Um peixe prateado e pequeno que nada em cardumes imensos. Eles emitem um zumbido sônico ao movimentar suas escamas.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Média",
+                "Dificuldade de Pesca": "Média+, para melhor eficiência usar redes de pesca.",
+                "Uso Especial": "Bruxos e alquimistas podem utilizar os olhos para criar o Colírio da Percepção, que ajuda a identificar ilusões.",
+                "Efeito": "Consumir o arenque cru causa uma perda de 2% de FORÇA."
+            },
+            "Peixe-Coelho Manchado": {
+                "Características": "Um peixe invasor que possui espinhos venenosos nas barbatanas dorsais.",
+                "Localidade": "Muito comum próximo às áreas costeiras de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Média+, risco de envenenamento ao manusear.",
+                "Uso na Culinária": "Se limpo corretamente (Exige caminho do cozinheiro), torna-se uma iguaria que recupera 30 de SACIEDADE."
+            },
+            "Salmonete de Fogo": {
+                "Características": "Um peixe de cor avermelhada intensa que vive em águas rasas e quentes. É o peixe favorito dos recrutas dos Guardas Reais durante os acampamentos na costa.",
+                "Localidade": "Muito comum próximo às áreas mais rasas de Askelon e Netanya.",
+                "Raridade": "Comum",
+                "Dificuldade de Pesca": "Baixa",
+                "Efeito": "Sua carne é naturalmente quente. Comer este peixe remove instantaneamente o debuff de Frio/Hipotermia e recupera 10 de STAMINA."
+            },
+            "Enguia de Areia de Netanya": {
+                "Características": "Longas e finas, estas enguias se camuflam perfeitamente na areia branca da praia.",
+                "Localidade": "Muito raramente cont próximo às áreas mais rasas de Askelon e Netanya.",
+                "Raridade": "Média",
+                "Dificuldade de Pesca": "Alta, são extremamente escorregadias.",
+                "Drops": "Pele de Enguia. Pode ser usada por um Tecelão para reforçar botas, concedendo +1 de AGILIDADE em terrenos molhados ou arenosos.",
+                "Uso na Culinária": "Restaura 20 de SACIEDADE e 5 de Vigor."
+            },
+            "Sargo de Prata Blindado": {
+                "Características": "Suas escamas são duras como metal devido a sua peculiar alimentação de minerais da região de Netanya.",
+                "Localidade": "Muito raramente próximo da costa de Netanya.",
+                "Raridade": "Média",
+                "Dificuldade de Pesca": "Alta, são extremamente agressivos.",
+                "Drops": [
+                    "Escama de Prata Endurecida",
+                    "Nadadeira de Prata Amolada"
+                ]
+            },
+            "Côco-Ranguejo": {
+                "Características": "Um caranguejo eremita com uma carapaça muitas vezes confundida com um côco.",
+                "Localidade": ["Praia Heliya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Carne Adocicada",
+                    "Casca Fibrosa",
+                    "Pinça"
+                ]
+            },
+            "Cefalópode Terrestre": {
+                "Características": "Uma espécie de polvo que vivem em buracos na areia e usam pedaços de corais afiados como projéteis.",
+                "Localidade": ["Praia Heliya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Saco de Tinta Cáustica",
+                    "Ventosas Espinhosas"
+                ]
+            },
+            "Aguareia-Viva": {
+                "Características": "Uma água-viva gigante que flutua a poucos centímetros da areia. Sua cúpula reflete a luz solar, funcionando como um espelho.",
+                "Localidade": ["Praia Heliya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Membrana de Refração",
+                    "Filamento Elétrico"
+                ]
+            },
+            "Quelante de Cristais": {
+                "Características": "Uma tartaruga gigante com cristais de sal crescendo em seu casco, agindo como uma armadura natural.",
+                "Localidade": ["Praia Heliya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Placa de Casco de Sal",
+                    "Fragmento de Cristal de Sal",
+                    "Coração de Cristal"
+                ]
+            },
+            "Karkinos, o Titã das Marés": {
+                "Características": "Um crustáceo de proporções colossais. A sua carapaça não é apenas feita de quitina, mas de estratos de sedimentos marinhos, corais fossilizados e cristais que brilham com o sol. Ele é o senhor da costa de Netanya e vê qualquer caminhante como um invasor.",
+                "Localidade": ["Praia Heliya"],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Fragmento do Titã das Marés",
+                    "Carapaça de Karkinos",
+                    "Olhos de Cristal Abissal",
+                    "Tecido Muscular Hiper-Denso",
+                    "Glândula de Pressão Hidráulica",
+                    "Coral Energizado",
+                    "Pinças do Titã"
+                ]
+            }
+        },
+        "Floresta Temperada": {
+            "Urso Pardo": {
+                "Características": "Couro extremamente resistente, corpo robusto, garras muito afiadas. (Uma feroz criatura capaz de derrubar árvores facilmente com o esbarrar de seu enorme corpo)",
+                "Altura": "7~10 M",
+                "Localidade": ["Floresta Temperada"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Garras de Urso",
+                    "Couro Incomum"
+                ]
+            },
+            "Uso Colossal": {
+                "Características": "Couro extremamente resistente, corpo robusto, garras muito afiadas e chifres pontudos. (Uma feroz criatura capaz de derrubar árvores facilmente com o esbarrar de seu enorme corpo, extremamente agressivo e um predador nato, abate suas presas sem dó nem piedade as esmagando, cicatrizes pelo corpo mostram as diversas batalhas travadas por essa imponente fera, possui grandes chifres capaz de empalar suas vítimas)",
+                "Altura": "13~15 M",
+                "Localidade": ["Ao norte do reino de Askelon, na floresta temperada de Netanya."],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Garras do Colossal",
+                    "Ossos do Colossal",
+                    "Chifres Colossais",
+                    "3 Coutros Raros",
+                    "Fragmento de Essência"
+                ]
+            }
+        },
+        "Área Sul": {
+            "Esquilo": {
+                "Características": "Um simples e adorável esquilo que carrega bolotas.",
+                "Altura": "20 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Coelho": {
+                "Características": "Um simples e adorável coelho orelhudo.",
+                "Altura": "27~33 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Raposa": {
+                "Características": "Uma simples raposa oportunista.",
+                "Altura": "65 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Corvo": {
+                "Caracterísiticas": "Um simples e inteligente corvo.",
+                "Altura": "50~60 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["2~4 Penas Negras Comuns"]
+            },
+            "Lobo": {
+                "Características": "São grandes,ágeis e possuem uma pelagem amarronzada, costumam andar em bando e abater suas presas fazendo emboscadas com ataques coordenados.",
+                "Altura":"2 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Médio",
+                    "Garras de Fera",
+                    "Presas de Fera"
+                ]
+            },
+            "Javelin Impetuoso": {
+                "Características": "O Javelin Impetuoso é uma criatura selvagem e perigosa, conhecida por sua agressividade e velocidade. Suas presas afiadas como lanças são usadas para perfurar e empurrar seus inimigos, enquanto suas habilidades de deslocamento o tornam um oponente imprevisível em combate.",
+                "Altura": "2 M",
+                "Localidade": [
+                    "Florestas",
+                    "Montanhas",
+                    "Cavernas"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Presas Impetuosas"
+                ]
+            },
+            "Raposa Escalarte": {
+                "Características": "Uma raposa quente e oportunista.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Florestas",
+                    "Desertos",
+                    "Bosques",
+                    "Planícies"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Pelagem Escalarte"
+                ]
+            },
+            "Matilha de Gatos": {
+                "Características": "Uma nuvem de pelos, olhos brilhantes e garras afiadas, a Matilha de Gatos é uma criatura formada pela união de diversos felinos selvagens, unidos por um instinto predatório e uma inteligência surpreendentemente coordenada. Seus miados se misturam em um coro arrepiante.",
+                "Altura":"25 CM",
+                "Localidade": [
+                    "Florestas",
+                    "Áreas sem muito contato humano"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Pelagem Felina",
+                    "5 Bolas de Pelo"
+                ]
+            },
+            "Gambá Peçonheto": {
+                "Características": "Um gambá traiçoeiro e esguio.",
+                "Altura":"1 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Glândula de Fedor Venenoso",
+                    "Couro Incomum"
+                ]
+            },
+            "Falcão Críptico": {
+                "Características": "O Falcão Críptico é uma criatura alada enigmática e poderosa, conhecida por sua agilidade incomparável, ataques rápidos e gritos penetrantes.",
+                "Altura": "1.80 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Garras de Falcão",
+                    "Penugem Aviária"
+                ]
+            },
+            "Zevantes": {
+                "Características": "É uma criatura majestosa, com a forma de um cervo de porte médio. Sua pelagem é de um verde musgo, mesclada com tons de marrom terroso, permitindo que se camufla perfeitamente na floresta. Seus chifres, longos e ramificados, são adornados com vinhas e flores silvestres, que parecem brotar diretamente deles.",
+                "Altura": "4 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Chifre de Zevantes",
+                    "Vinhas de Zevantes",
+                    "Pelo de Zevantes",
+                    "Olho de Zevantes"
+                ]
+            },
+            "Harpia de Brumas Rígidas": {
+                "Características":"",
+                "Altura": "2.5 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Brumas Rígidas",
+                    "Ossos de Harpia"
+                ]
+            },
+            "Urso Colossal": {
+                "Características":"Couro extremamente resistente, corpo robusto, garras muito afiadas e chifres pontudos. (Uma feroz criatura capaz de derrubar árvores facilmente com o esbarrar de seu enorme corpo, extremamente agressivo e um predador nato, abate suas presas sem dó nem piedade as esmagando, cicatrizes pelo corpo mostram as diversas batalhas travadas por essa imponente fera, possui grandes chifres capaz de empalar suas vítimas)",
+                "Altura": "13~15 M",
+                "Localidade": ["Ao norte do reino de Askelon, na floresta temperada de Netanya."],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Garras do Colossal",
+                    "Ossos do Colossal",
+                    "Chifres Colossais",
+                    "3 Coutros Raros",
+                    "Fragmento de Essência"
+                ]
+            }
+        },
+        "Arredores do Cedro Ancestral": {
+            "Esquilo": {
+                "Características": "Um simples e adorável esquilo que carrega bolotas.",
+                "Altura": "20 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Coelho": {
+                "Características": "Um simples e adorável coelho orelhudo.",
+                "Altura": "27~33 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Raposa": {
+                "Características": "Uma simples raposa oportunista.",
+                "Altura": "65 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Corvo": {
+                "Caracterísiticas": "Um simples e inteligente corvo.",
+                "Altura": "50~60 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["2~4 Penas Negras Comuns"]
+            },
+            "Javelin Impetuoso": {
+                "Características": "O Javelin Impetuoso é uma criatura selvagem e perigosa, conhecida por sua agressividade e velocidade. Suas presas afiadas como lanças são usadas para perfurar e empurrar seus inimigos, enquanto suas habilidades de deslocamento o tornam um oponente imprevisível em combate.",
+                "Altura": "2 M",
+                "Localidade": [
+                    "Florestas",
+                    "Montanhas",
+                    "Cavernas"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Presas Impetuosas"
+                ]
+            },
+            "Raposa Escalarte": {
+                "Características": "Uma raposa quente e oportunista.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Florestas",
+                    "Desertos",
+                    "Bosques",
+                    "Planícies"
+                ]
+            },
+            "Espírito Verdejante": {
+                "Características":"O Espírito Verdejante é uma criatura translúcida e brilhante, composta de névoa verdejante e padrões florais delicados. Ele tem a forma de um humanoide alto e esguio, com membros longos e finos. Seus olhos são grandes e brilhantes, com um brilho verde que reflete a luz do sol. Seu cabelo é longo e ondulado, feito de folhas e flores entrelaçadas.",
+                "Altura": "1.80 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Núcleo Verdejante",
+                    "Essência da Vida"
+                ]
+            },
+            "Zevantes": {
+                "Características": "É uma criatura majestosa, com a forma de um cervo de porte médio. Sua pelagem é de um verde musgo, mesclada com tons de marrom terroso, permitindo que se camufla perfeitamente na floresta. Seus chifres, longos e ramificados, são adornados com vinhas e flores silvestres, que parecem brotar diretamente deles.",
+                "Altura": "4 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Chifre de Zevantes",
+                    "Vinhas de Zevantes",
+                    "Pelo de Zevantes",
+                    "Olho de Zevantes"
+                ]
+            },
+            "Avatar do Cedro Ancestral": {
+                "Características": "O Avatar do Cedro Ancestral é a manifestação física e espiritual de um cedro milenar, uma sentinela da floresta que transcende o tempo. Ele é a própria essência da natureza selvagem, um guardião que se ergue como uma montanha verdejante.",
+                "Altura": "2 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Fragmento de Essência",
+                    "Casca do Cedro Ancestral",
+                    "Planta da Vida"
+                ]
+            }
+        },
+        "Área Norte de Netanya": {
+            "Esquilo": {
+                "Características": "Um simples e adorável esquilo que carrega bolotas.",
+                "Altura": "20 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Coelho": {
+                "Características": "Um simples e adorável coelho orelhudo.",
+                "Altura": "27~33 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Raposa": {
+                "Características": "Uma simples raposa oportunista.",
+                "Altura": "65 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Corvo": {
+                "Caracterísiticas": "Um simples e inteligente corvo.",
+                "Altura": "50~60 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["2~4 Penas Negras Comuns"]
+            },
+            "Javelin Alabarda": {
+                "Características":"O Javelin Alabarda é uma criatura selvagem e perigosa, conhecida por sua agressividade e velocidade. Suas presas poderosas como alabardas são usadas para perfurar e empurrar seus inimigos, enquanto suas habilidades de deslocamento o tornam um oponente imprevisível em combate.",
+                "Altura": "2 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Presas Alabardas"
+                ]
+            },
+            "Raposa Branca": {
+                "Características":"Uma raposa fria e oportunista.",
+                "Altura": "1 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Pelagem Nevada"
+                ]
+            },
+            "Gambá Friento": {
+                "Características":"Um gambá traiçoeiro, frio e esguio.",
+                "Altura": "1 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Glândula de Fedor Friento",
+                    "Couro Incomum"
+                ]
+            },
+            "Zevantes": {
+                "Características": "É uma criatura majestosa, com a forma de um cervo de porte médio. Sua pelagem é de um verde musgo, mesclada com tons de marrom terroso, permitindo que se camufla perfeitamente na floresta. Seus chifres, longos e ramificados, são adornados com vinhas e flores silvestres, que parecem brotar diretamente deles.",
+                "Altura": "4 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Chifre de Zevantes",
+                    "Vinhas de Zevantes",
+                    "Pelo de Zevantes",
+                    "Olho de Zevantes"
+                ]
+            },
+            "Harpia de Brumas Gélidas": {
+                "Características":"",
+                "Altura": "2.5 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Brumas Gélidas",
+                    "Ossos Congelados de Harpia"
+                ]
+            },
+            "Urso Colossl": {
+                "Características":"ouro extremamente resistente, corpo robusto, garras muito afiadas e chifres pontudos. (Uma feroz criatura capaz de derrubar árvores facilmente com o esbarrar de seu enorme corpo, extremamente agressivo e um predador nato, abate suas presas sem dó nem piedade as esmagando, cicatrizes pelo corpo mostram as diversas batalhas travadas por essa imponente fera, possui grandes chifres capaz de empalar suas vítimas)",
+                "Altura": "13~15 M",
+                "Localidade": ["Ao norte do reino de Askelon, na floresta temperada de Netanya."],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Garras do Colossal",
+                    "Ossos do Colossal",
+                    "Chifres Colossais",
+                    "3 Coutros Raros",
+                    "Fragmento de Essência"
+                ]
+            }
+        }
+    }
+}
