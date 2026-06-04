@@ -1,5 +1,8 @@
 import json
 
+def executar():
+    print("\n=== BETSUARIO ===")
+
 # Carrega o arquivo
 with open("json/betsuario.json", "r", encoding="utf-8") as arquivo:
     betsuario = json.load(arquivo)

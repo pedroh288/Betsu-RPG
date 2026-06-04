@@ -1,3 +1,12 @@
+def executar():
+    while True:
+        print("\n=== STATUS ===")
+
+        voltar = input("Voltar? (s/n):").lower
+
+        if voltar == "s":
+             break
+        
 # Introdução:
 print('Olá, vamos fazer os devidos cálculos dos \33[33mATRIBUTOS\33[0m do seu personagem!\n')
 

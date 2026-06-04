@@ -3,6 +3,9 @@
 import random
 import time
 
+def executar():
+    print("\n=== SPAWN ===")
+
 # Definir as cores para cada raridade (ANSI escape codes)
 cores_raridade = {
     "Comum": "\033[32m",    # Verde
