@@ -2,8 +2,14 @@
 
 import random
 import time
+import os
+
+def limpar():
+    os.system("clear")  # Linux
+    # os.system("cls")  # Windows
 
 def executar():
+    limpar()
     print("\n=== SPAWN ===")
 
     # Definir as cores para cada raridade (ANSI escape codes)
