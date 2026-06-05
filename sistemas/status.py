@@ -7,8 +7,13 @@ def limpar():
 def escolha(pergunta):
 
     while True:
+        entrada = input(pergunta)
+
+        if entrada == "0":
+            print("\nFinalizando o programa!")
+            return None
         try:
-            valor = int(input(pergunta))
+            valor = int(entrada)
 
             if valor < 0:
                 print("\nDigite um valor válido.\n")
@@ -22,27 +27,45 @@ def escolha(pergunta):
 
 def executar():
     limpar()
-    print('Olá, vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\n')
+    print('Olá, vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para sair')
 
     while True:
 
-        print('\n=== INTELIGÊNCIA ===')
+        print('\n=== \33[34mINTELIGÊNCIA\33[0m ===')
         I = escolha("Me diga a sua INTELIGÊNCIA\nDigite aqui: ")
 
-        print('\n=== CARISMA ===')
+        if I is None:
+            return
+
+        print('\n=== \33[34mCARISMA\33[0m ===')
         Ca = escolha('Agora o CARISMA?\nDigite aqui: ')
 
-        print('\n=== FORÇA ===')
+        if Ca is None:
+            return
+
+        print('\n=== \33[34mFORÇA\33[0m ===')
         F = escolha('Sobre a FORÇA?\nDigite aqui: ')
 
-        print('\n=== AGILIDADE ===')
+        if F is None:
+            return
+
+        print('\n=== \33[34mAGILIDADE\33[0m ===')
         A = escolha('Me diga agora a sua AGILIDADE?\nDigite aqui: ')
 
-        print('\n=== CONSTITUIÇÃO ===')
+        if A is None:
+            return
+
+        print('\n=== \33[34mCONSTITUIÇÃO\33[0m ===')
         Co = escolha('Por último, sobre sua CONSTITUIÇÃO?\nDigite aqui: ')
 
-        print('\n=== NÍVEL ===')
+        if Co is None:
+            return
+
+        print('\n=== \33[34mNÍVEL\33[0m ===')
         nivel = escolha('Agora, me diga o seu NÍVEL: ')
+
+        if nivel is None:
+            return
 
         N = nivel - 1
 
@@ -58,25 +81,26 @@ def executar():
         am = 4 + I
         af = 1
 
-        print("\n===== RESULTADO =====")
+        print("\n===== \33[1;96mRESULTADO\33[0m =====")
 
-        print(f"Mana: {mana}")
-        print(f"Vida: {vida}")
-        print(f"Stamina: {stamina}")
-        print(f"Fio de Razão: {Fr}%")
+        print(f"\n\33[36mMana\33[0m: \33[32m{mana}\33[0m")
+        print(f"\33[36mVida\33[0m: \33[32m{vida}\33[0m")
+        print(f"\33[36mStamina\33[0m: \33[32m{stamina}\33[0m")
+        print(f"\33[36mFio de Razão\33[0m: \33[32m{Fr}%\33[0m")
 
-        print(f"\nResistência Física: {rf}")
-        print(f"Resistência Mágica: {rm}")
+        print(f"\n\33[36mResistência Física\33[0m: \33[32m{rf}\33[0m")
+        print(f"\33[36mResistência Mágica\33[0m: \33[32m{rm}\33[0m")
 
-        print(f"\nMovimentação: {m}")
-        print(f"Alcance Mágico: {am}")
-        print(f"Alcance Físico: {af}")
+        print(f"\n\33[36mMovimentação\33[0m: \33[32m{m}\33[0m")
+        print(f"\33[36mAlcance Mágico\33[0m: \33[32m{am}\33[0m")
+        print(f"\33[36mAlcance Físico\33[0m: \33[32m{af}\33[0m")
 
         continuar = input(
             "\nDeseja calcular novamente? (s/n): "
         ).lower()
 
         if continuar != "s":
+            limpar()
             break
 
 if __name__ == "__main__":
