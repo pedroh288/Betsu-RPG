@@ -3,72 +3,72 @@ import json
 def executar():
     print("\n=== BETSUARIO ===")
 
-# Carrega o arquivo
-with open("json/betsuario.json", "r", encoding="utf-8") as arquivo:
-    betsuario = json.load(arquivo)
+    # Carrega o arquivo
+    with open("dados/betsuario.json", "r", encoding="utf-8") as arquivo:
+        betsuario = json.load(arquivo)
 
-def escolher_opcao(opcoes, titulo):
-    print(f"\n=== {titulo} ===")
+    def escolher_opcao(opcoes, titulo):
+        print(f"\n=== {titulo} ===")
 
-    lista = list(opcoes)
+        lista = list(opcoes)
 
-    for i, item in enumerate(lista, start=1):
-        print(f"[{i}] {item}")
+        for i, item in enumerate(lista, start=1):
+            print(f"[{i}] {item}")
+
+        while True:
+            try:
+                escolha = int(input("\nEscolha: "))
+
+                if 1 <= escolha <= len(lista):
+                    return lista[escolha - 1]
+
+                print("Opção inválida.")
+
+            except ValueError:
+                print("Digite apenas números.")
+
 
     while True:
-        try:
-            escolha = int(input("\nEscolha: "))
 
-            if 1 <= escolha <= len(lista):
-                return lista[escolha - 1]
+        # Reino
+        reino = escolher_opcao(
+            betsuario.keys(),
+            "REINOS"
+        )
 
-            print("Opção inválida.")
+        # Região
+        regiao = escolher_opcao(
+            betsuario[reino].keys(),
+            "REGIÕES"
+        )
 
-        except ValueError:
-            print("Digite apenas números.")
+        # Mob
+        mob = escolher_opcao(
+            betsuario[reino][regiao].keys(),
+            "MOBS"
+        )
 
+        dados = betsuario[reino][regiao][mob]
 
-while True:
+        print("\n" + "=" * 40)
+        print(mob.upper())
+        print("=" * 40)
 
-    # Reino
-    reino = escolher_opcao(
-        betsuario.keys(),
-        "REINOS"
-    )
+        for chave, valor in dados.items():
 
-    # Região
-    regiao = escolher_opcao(
-        betsuario[reino].keys(),
-        "REGIÕES"
-    )
+            if isinstance(valor, list):
+                print(f"\n{chave}:")
+                for item in valor:
+                    print(f" - {item}")
 
-    # Mob
-    mob = escolher_opcao(
-        betsuario[reino][regiao].keys(),
-        "MOBS"
-    )
+            else:
+                print(f"\n{chave}: {valor}")
 
-    dados = betsuario[reino][regiao][mob]
+        print("\n" + "=" * 40)
 
-    print("\n" + "=" * 40)
-    print(mob.upper())
-    print("=" * 40)
+        voltar = input(
+            "\nDeseja consultar outro mob? (s/n): "
+        ).lower()
 
-    for chave, valor in dados.items():
-
-        if isinstance(valor, list):
-            print(f"\n{chave}:")
-            for item in valor:
-                print(f" - {item}")
-
-        else:
-            print(f"\n{chave}: {valor}")
-
-    print("\n" + "=" * 40)
-
-    voltar = input(
-        "\nDeseja consultar outro mob? (s/n): "
-    ).lower()
-
-    if voltar != "s":
-        break
+        if voltar != "s":
+            break

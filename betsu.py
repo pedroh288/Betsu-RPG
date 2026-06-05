@@ -1,8 +1,5 @@
 import os
-
-from sistemas import status
-from sistemas import betsuario
-from sistemas import spawn
+import sistemas as sistemas
 
 VERSAO = "0.1"
 
@@ -25,15 +22,15 @@ def executar_opcao(opcao):
 
     if opcao == "1":
         limpar()
-        betsuario.executar()
+        sistemas.betsuario.executar()
 
     elif opcao == "2":
         limpar()
-        status.executar()
+        sistemas.status.executar()
 
     elif opcao == "3":
         limpar()
-        spawn.executar()
+        sistemas.spawn.executar()
 
     elif opcao == "4":
         print("\nSistema ainda não implementado.")
