@@ -1,6 +1,12 @@
 import json
+import os
+    
+def limpar():
+    os.system("clear")  # Linux
+    # os.system("cls")  # Windows
 
 def executar():
+    limpar()
     print("\n=== BETSUARIO ===")
 
     # Carrega o arquivo
@@ -72,3 +78,6 @@ def executar():
 
         if voltar != "s":
             break
+
+if __name__ == "__main__":
+    executar() 

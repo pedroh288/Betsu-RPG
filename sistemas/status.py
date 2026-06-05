@@ -1,3 +1,9 @@
+import os
+
+def limpar():
+    os.system("clear")  # Linux
+    # os.system("cls")  # Windows
+
 def escolha(pergunta):
 
     while True:
@@ -15,7 +21,7 @@ def escolha(pergunta):
 
 
 def executar():
-
+    limpar()
     print('Olá, vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\n')
 
     while True:
@@ -72,3 +78,6 @@ def executar():
 
         if continuar != "s":
             break
+
+if __name__ == "__main__":
+    executar() 
