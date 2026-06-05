@@ -20,10 +20,15 @@ def executar():
 
         for i, item in enumerate(lista, start=1):
             print(f"[{i}] {item}")
+            
+        print("[0] Voltar")
 
         while True:
             try:
                 escolha = int(input("\nEscolha: "))
+
+                if escolha == 0:
+                    return None
 
                 if 1 <= escolha <= len(lista):
                     return lista[escolha - 1]
@@ -41,6 +46,11 @@ def executar():
             betsuario.keys(),
             "REINOS"
         )
+                
+        # 0
+        if reino is None:
+            return
+        
 
         # Região
         regiao = escolher_opcao(
@@ -53,6 +63,9 @@ def executar():
             betsuario[reino][regiao].keys(),
             "MOBS"
         )
+
+        if mob is None:
+            return   # volta para o betsu.py
 
         dados = betsuario[reino][regiao][mob]
 
