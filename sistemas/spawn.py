@@ -243,8 +243,15 @@ def executar():
 
         print("\nEscolha a região:")
         for num, info in regioes.items():
-            print(f"{num} - {info['nome']}")
+            print(f"[{num}] - {info['nome']}")
+    
+        print("[0] - Voltar/Sair")
+
         regiao = input("Digite o número correspondente a região: ")
+
+        if regiao == "0":
+            print("Finalizando o programa!")
+            return
 
         if regiao not in regioes:
             print("Região inválida. Reinicie o programa e tente novamente.")
@@ -256,9 +263,17 @@ def executar():
         # Escolha do local dentro da região
         print(f"Escolha o local dentro de {nome_regiao}:")
         for num, info in regioes[regiao]["locais"].items():
-            print(f"{num} - {info['nome']}")
+            print(f"[{num}] - {info['nome']}")
+
+        print("[0] - Sair")
+
         local = input("Digite o número correspondente ao local: ")
 
+
+        if local == "0":
+            print("Finalizando o programa!")
+            return
+        
         if local not in regioes[regiao]["locais"]:
             print("Local inválido. Reinicie o programa e tente novamente.")
             exit()
@@ -268,10 +283,15 @@ def executar():
 
         # Escolha do horário
         print("Escolha o horário:")
-        print("1 - Dia")
-        print("2 - Noite")
-        print("3 - Madrugada")
+        print("[1] - Dia")
+        print("[2] - Noite")
+        print("[3] - Madrugada")
+        print("[0] - Sair")
         horario_opcao = input("Digite 1, 2 ou 3: ")
+
+        if horario_opcao == "0":
+            print("Finalizando o programa!")
+            return
 
         horarios = {"1": "Dia", "2": "Noite", "3": "Madrugada"}
         horario = horarios.get(horario_opcao, None)
