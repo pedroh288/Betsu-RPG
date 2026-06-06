@@ -100,7 +100,6 @@ def executar():
         ).lower()
 
         if continuar != "s":
-            limpar()
             break
 
 if __name__ == "__main__":
