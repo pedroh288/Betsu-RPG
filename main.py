@@ -9,13 +9,13 @@ def limpar():
 
 def mostrar_menu():
     print("=" * 40)
-    print(f"       BETSU v{VERSAO}")
+    print(f"               BETSU v{VERSAO}")
     print("=" * 40)
 
     print("[1] Betsuário")
     print("[2] Status")
     print("[3] Spawn")
-    print("[4] xxx")
+    #print("[4] xxx")
     print("[0] Sair")
 
 def executar_opcao(opcao):
@@ -32,8 +32,8 @@ def executar_opcao(opcao):
         limpar()
         sistemas.spawn.executar()
 
-    elif opcao == "4":
-        print("\nSistema ainda não implementado.")
+    #elif opcao == "4":
+     #   print("\nSistema ainda não implementado.")
 
     elif opcao == "0":
         print("\nEncerrando BETSU...")
