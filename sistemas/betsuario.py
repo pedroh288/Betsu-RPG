@@ -10,8 +10,15 @@ def executar():
     print("\n=== BETSUARIO ===")
 
     # Carrega o arquivo
-    with open("dados/betsuario.json", "r", encoding="utf-8") as arquivo:
-        betsuario = json.load(arquivo)
+    try:
+        with open("dados/betsuario.json", "r", encoding="utf-8") as arquivo:
+            betsuario = json.load(arquivo)
+    except FileExistsError:
+        print("Arquivo betsuario.json não encontrado")
+        return
+    except json.JSONDecodeError:
+        print("Erro no formato do betsuario.json")
+        return
 
     def escolher_opcao(opcoes, titulo):
         print(f"\n=== {titulo} ===")
