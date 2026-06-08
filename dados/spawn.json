@@ -1,0 +1,630 @@
+{
+    "Askelon": {
+        "Floresta Densa": {
+            "Gambá": {
+                "Raridade": "Comum",
+                "Dia": 60,
+                "Noite": 60,
+                "Madrugada": 60
+            },
+            "Morcego Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Asa-Assasina": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Rato Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Rei dos Ratos (ELITE)": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Bandido": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            }
+        },
+        "Província": {
+            "Gambá": {
+                "Raridade": "Comum",
+                "Dia": 60,
+                "Noite": 60,
+                "Madrugada": 60
+            },
+            "Lobo": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Bandido": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Rato Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Rei dos Ratos (ELITE)": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            }
+        },
+        "Caverna da Floresta Densa": {
+            "Morcego Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Aranha Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Aranha Gigante (ELITE)": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Rato Gigante": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Rato Gigante (ELITE)": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            }
+        }
+    },
+    "Netanya": {
+        "Floresta Temperada": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Corvo": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Urso Pardo": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Urso Colossal": {
+                "Raridade": "Épico",
+                "Dia": 4,
+                "Noite": 4,
+                "Madrugada": 4
+            }
+        },
+        "Área Sul": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Raposa": {
+                "Raridade": "Comum",
+                "Dia": 40,
+                "Noite": 45,
+                "Madrugada": 30
+            },
+            "Lobo": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 35,
+                "Madrugada": 40
+            },
+            "Javelin Impetuoso": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Matilha de Gatos": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Gambá Peçonhento": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Falcão Críptico": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Zevantes": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            }
+        },
+        "Arredores do Cedro Ancestral": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 40,
+                "Noite": 40,
+                "Madrugada": 0
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 40,
+                "Noite": 40,
+                "Madrugada": 0
+            },
+            "Raposa Escalarte": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 25
+            },
+            "Espírito Verdejante": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Zevantes": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Avatar do Cedro Ancestral": {
+                "Raridade": "Épico",
+                "Dia": 4,
+                "Noite": 4,
+                "Madrugada": 4
+            }
+        },
+        "Área Norte": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Raposa": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Javelin Alabarda": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Raposa Branca": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Gambá Friento": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Zevantes": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Harpia de Brumas Gélidas": {
+                "Raridade": "Raro",
+                "Dia": 15,
+                "Noite": 15,
+                "Madrugada": 15
+            },
+            "Urso Colossal": {
+                "Raridade": "Épico",
+                "Dia": 5,
+                "Noite": 5,
+                "Madrugada": 5
+            }
+        }
+    },
+    "Bayovia": {
+        "Portões de Beloozero": {
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 35,
+                "Noite": 25,
+                "Madrugada": 0
+            },
+            "Raposa Branca": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 35
+            },
+            "Gambá Friento": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Grolok Almiscarado": {
+                "Raridade": "Incomum",
+                "Dia": 40,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Corvo Gélido": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Sneegk": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Urso das Neves": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 20
+            },
+            "Harpia de Brumas Gélidas": {
+                "Raridade": "Raro",
+                "Dia": 15,
+                "Noite": 15,
+                "Madrugada": 15
+            },
+            "Gigante Glacial": {
+                "Raridade": "Épico",
+                "Dia": 3,
+                "Noite": 3,
+                "Madrugada": 3
+            }
+        },
+        "Caminho dos Ecos Distorcidos": {
+            "Espectro Congelado": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 40,
+                "Madrugada": 40
+            },
+            "Carcaça Congelada": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 35,
+                "Madrugada": 35
+            },
+            "Ghoul de Gelo": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Fantasma Desesperado": {
+                "Raridade": "Incomum",
+                "Dia": 0,
+                "Noite": 25,
+                "Madrugada": 25
+            },
+            "Necro-Amálgama": {
+                "Raridade": "Raro",
+                "Dia": 0,
+                "Noite": 10,
+                "Madrugada": 14
+            },
+            "Cavalaria Espectral e Bakotsu": {
+                "Raridade": "Épico",
+                "Dia": 0,
+                "Noite": 4,
+                "Madrugada": 7
+            }
+        },
+        "Tundra Congelada": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Raposa": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Javelin Alabarda": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Raposa Branca": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Gambá Friento": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Zevantes": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Harpia de Brumas Gélidas": {
+                "Raridade": "Raro",
+                "Dia": 15,
+                "Noite": 15,
+                "Madrugada": 15
+            },
+            "Urso Colossal": {
+                "Raridade": "Épico",
+                "Dia": 5,
+                "Noite": 5,
+                "Madrugada": 5
+            }
+        },
+        "Floresta de Coniferas": {
+            "Esquilo": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Coelho": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Raposa": {
+                "Raridade": "Comum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Javelin Alabarda": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Raposa Branca": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Gambá Friento": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Zevante": {
+                "Raridade": "Raro",
+                "Dia": 10,
+                "Noite": 10,
+                "Madrugada": 10
+            },
+            "Harpia de Brumas Gélidas": {
+                "Raridade": "Raro",
+                "Dia": 15,
+                "Noite": 15,
+                "Madrugada": 15
+            },
+            "Uso Colossal": {
+                "Raridade": "Épico",
+                "Dia": 5,
+                "Noite": 5,
+                "Madrugada": 5
+            }
+        }
+    },
+    "Carvenas Profundas": {
+        "Garganta Congelada": {
+            "Morcego de Cristal": {
+                "Raridade": "Comum",
+                "Dia": 45,
+                "Noite": 45,
+                "Madrugada": 45
+            },
+            "Verme de Gelo": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 25
+            }
+        },
+        "Veias de Tugstênio": {
+            "Lagarto de Tugstênio": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Aranha de Vapor": {
+                "Raridade": "Incomum",
+                "Dia": 25,
+                "Noite": 35,
+                "Madrugada": 30
+            },
+            "Escorpião de Tugstênio": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Gosma de Vapor": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Wyrm Filhote": {
+                "Raridade": "Incomum",
+                "Dia": 20,
+                "Noite": 20,
+                "Madrugada": 20
+            }
+        },
+        "Câmara de Lava": {
+            "Larva de Lava": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 30
+            },
+            "Wyrm Filhote": {
+                "Raridade": "Incomum",
+                "Dia": 27,
+                "Noite": 27,
+                "Madrugada": 27
+            },
+            "Wyrm Jovem": {
+                "Raridade": "Incomum",
+                "Dia": 18,
+                "Noite": 18,
+                "Madrugada": 18
+            },
+            "Wyrm Adulto": {
+                "Raridade": "Raro",
+                "Dia": 12,
+                "Noite": 12,
+                "Madrugada": 12
+            },
+            "Titã de Lava": {
+                "Raridade": "Raro",
+                "Dia": 12,
+                "Noite": 12,
+                "Madrugada": 12
+            },
+            "Elemental de Lava": {
+                "Raridade": "Épico",
+                "Dia": 7,
+                "Noite": 7,
+                "Madrugada": 7
+            },
+            "O Coração Vivo": {
+                "Raridade": "Épico",
+                "Dia": 2,
+                "Noite": 2,
+                "Madrugada": 2
+            }
+        }
+    },
+    "Praias": {
+        "Heliya": {
+            "Côco-Ranguejo": {
+                "Raridade": "Incomum",
+                "Dia": 35,
+                "Noite": 30,
+                "Madrugada": 25
+            },
+            "Cefalópode-Terrestre": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 25
+            },
+            "Aguarela-Viva": {
+                "Raridade": "Incomum",
+                "Dia": 30,
+                "Noite": 30,
+                "Madrugada": 25
+            },
+            "Quelante-de-Cristais": {
+                "Raridade": "Raro",
+                "Dia": 12,
+                "Noite": 12,
+                "Madrugada": 12
+            },
+            "Karkinos": {
+                "Raridade": "Épico",
+                "Dia": 5,
+                "Noite": 5,
+                "Madrugada": 5
+            }
+        }
+    }
+}
