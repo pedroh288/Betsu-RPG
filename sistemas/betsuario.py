@@ -100,7 +100,11 @@ def executar():
             "\nDeseja consultar outro mob? (s/n): "
         ).lower()
 
-        if voltar != "s":
+        if voltar == "s":
+            limpar()
+            continue
+
+        else:
             break
 
 if __name__ == "__main__":
