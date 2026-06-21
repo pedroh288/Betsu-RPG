@@ -65,6 +65,10 @@ def executar():
             "REGIÕES"
         )
 
+        # 0
+        if regiao is None:
+            return
+
         # Mob
         mob = escolher_opcao(
             betsuario[reino][regiao].keys(),
