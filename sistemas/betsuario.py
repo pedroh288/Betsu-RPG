@@ -7,7 +7,7 @@ def limpar():
 
 def executar():
     limpar()
-    print("\n=== BETSUARIO ===")
+    print("\n=== \33[35mBETSUARIO\33[0m ===")
 
     # Carrega o arquivo
     try:
@@ -21,7 +21,7 @@ def executar():
         return
 
     def escolher_opcao(opcoes, titulo):
-        print(f"\n=== {titulo} ===")
+        print(f"\n=== \33[36m{titulo}\33[0m ===")
 
         lista = list(opcoes)
 
@@ -81,7 +81,7 @@ def executar():
         dados = betsuario[reino][regiao][mob]
 
         print("\n" + "=" * 40)
-        print(mob.upper())
+        print(f"\33[33m{mob.upper()}\33[0m")
         print("=" * 40)
 
         for chave, valor in dados.items():
