@@ -1,0 +1,93 @@
+{
+    "Askelon": {
+        "Cabana do Pescador": {
+            "Vara de Pesca Básica":{
+                "Características": "Uma vara leve e flexível, feita de bambu comum seco ao sol. Ideal para iniciantes.",
+                "Efeito": "Alcance máximo de 15 metros. Suporta peixes de dificuldade Fácil- até Normal.",
+                "Preço": 15
+            },
+            "Vara de Pesca Reforçada": {
+                "Características": "Feita com junco trançado e ponta de osso de peixe. Tem mais flexibilidade para aguentar os trancos de peixes mais ativos.",
+                "Efeito": "Alcance máximo de 40 metros. Concede +1 em testes de Pesca na beira-mar.",
+                "Preço": 30
+            },
+            "Linha de Linho Comum (50 M)": {
+                "Características": "Fio áspero feito de fibra vegetal torcida. É barata, mas arrebenta facilmente se o peixe for muito pesado.",
+                "Efeito": "Quebra automaticamente contra peixes de nível médio ou superior.",
+                "Capacidade": 5,
+                "Preço": 5
+            },
+            "Linha de Nylon Simples (100 M)": {
+                "Característcas": "Linha transparente e lisa. Desliza melhor e assusta menos os peixes.",
+                "Capacidade": 5,
+                "Preço": 20
+            },
+            "Anzol de Ferro Batido (Pacote com 5)": {
+                "Características": "Anzóis simples feitos de sucata de ferro.",
+                "Capacidade": 10,
+                "Preço": 10
+            },
+            "Pote de Minhocas da Areia (10 unidades)": {
+                "Características": "Minhocas comuns cavadas na própria praia. O petisco favorito dos peixes rasos.",
+                "Efeito": "Isca consumível. Aumenta a chance de fisgar peixes de nível Fácil e reduz o tempo de espera pela metade.",
+                "Capacidade": 5,
+                "Preço": 8
+            },
+            "Isca Artificial de Brilho": {
+                "Características": "Um pedaço de metal polido que reflete a luz do sol debaixo d'água, simulando um peixe pequeno.",
+                "Efeito": "Aumenta a chance de atrair peixes predadores.",
+                "Capacidade": 5,
+                "Preço": 25
+            }
+        },
+        "Forja": {
+            "Comprar": {
+                "Armadura Leve": {
+                    "Características": "Uma armadura leve que não cobre todas as partes do corpo, mas pelo menos quebra um galho.",
+                    "Requisitos": "2 de Constituição",
+                    "Status Bônus": "+2 de Resistência Física",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Armadura Pesada": {
+                    "Características": "Uma armadura pesada e robusta, aparenta ser bem resistente.",
+                    "Requisitos": "4 de Constituição",
+                    "Efeito": "-2 de Agilidade caso o jogador não tenha 6+ de Constituição.",
+                    "Status Bônus": "+6 de Resistência Física",
+                    "Durabilidade": 10,
+                    "Preço": 40
+                }
+            },
+            "Venda": {
+                "Minério de Cobre": {"Valor": "$5 por Unidade"},
+                "Minério de Ferro": {"Valor": "$15 por Unidade"}
+            },
+            "Fabricar": {
+                "Serra Críptica Envenenada": {
+                    "Características": "Uma adaga com o cabo curvado e lâminas de serra com uma alta capacidade de envenenar seus inimigos.",
+                    "Tipo de Arma": "Leve",
+                    "Materiais": [
+                        "Presas de Aranha: 1",
+                        "Glândula de Veneno +1: 2",
+                        "Garras Crípticas: 4"
+                    ],
+                    "Efeito": "4 de dano de veneno por 1d5+1 turnos ao fazer contato direto com o inimigo, 2 de sangramento na vida por golpe.",
+                    "Durabilidade": 6,
+                    "Preço": 30
+                },
+                "Garras de Urso": {
+                    "Observação": "EXCLUSIVO PARA A CLASSEM SELVAGEM",
+                    "Caracterísitcas": "Um par luvas com garras do Urso Pardo de Netanya",
+                    "Tipo de Arma": "Leve",
+                    "Materiais": [
+                        "Garras de Urso: 6",
+                        "Couro Incomum: 2"
+                    ],
+                    "Efeito": "+8 dano adicional contra criaturas bestiais.",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ def mostrar_menu():
     print("[1] Betsuário")
     print("[2] Status")
     print("[3] Spawn")
-    #print("[4] xxx")
+    print("[4] Lojas")
     print("[0] Sair")
 
 def executar_opcao(opcao):
@@ -32,8 +32,9 @@ def executar_opcao(opcao):
         limpar()
         sistemas.spawn.executar()
 
-    #elif opcao == "4":
-     #   print("\nSistema ainda não implementado.")
+    elif opcao == "4":
+        limpar()
+        sistemas.lojas.executar()
 
     elif opcao == "0":
         print("\nEncerrando BETSU...")
