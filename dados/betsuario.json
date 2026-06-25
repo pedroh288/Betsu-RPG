@@ -854,6 +854,191 @@
                 "Raridade": "Média",
                 "Drops": []
             }
+        },
+        "Cavernas Profundas": {
+            "Nível 1 - A Garganta Congelada": {
+                "Morcego de Cristal": {
+                    "Características": "Pequenos morcegos com asas rígidas de gelo translúcido. Quando imóveis, confundem-se facilmente com estalactites naturais. Atacam em bandos.",
+                    "Altura": "60 CM",
+                    "Localidade": ["Tetos de Cavernas Congeladas"],
+                    "Raridade": "Comum",
+                    "Drops": [
+                        "Asa de Cristal",
+                        "Presa Congelada"
+                    ]
+                },
+                "Verme de Gelo Translúcido": {
+                    "Características": "Uma criatura alongada, quase invisível, composta de gelo cristalino vivo. Costuma se mover dentro das paredes e do chão congelado, atacando presas debilitadas pelo frio extremo.",
+                    "Altura": "4~6 M",
+                    "Localidade": ["Cavernas Congeladas Profundas"],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Fragmento de Gelo Vivo",
+                        "Cristal Criogênico Bruto"
+                    ]
+                }
+            },
+            "Nível 2 - Veias de Tunsgstênio": {
+                "Lagarto de Tungstênio": {
+                    "Características": "Um réptil robusto com placas metálicas fundidas ao corpo. Seu sangue ferve lentamente devido ao calor constante do magma próximo.",
+                    "Altura": "3 M",
+                    "Localidade": [
+                        "Túneis Minerais",
+                        "Áreas de Vapor"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Placa de Tungstênio Vivo",
+                        "Escama Aquecida",
+                        "Material Térmico Rudimentar"
+                    ]
+                },
+                "Aranha de Vapor": {
+                    "Características": "Aranha esguia que se move entre nuvens de vapor quente, tecendo fios minerais incandescentes entre fendas e túneis estreitos.",
+                    "Altura": "1.5 M",
+                    "Localidade": [
+                        "Fendas Quenter",
+                        "Túneis Estreitos"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Seda Incandescente",
+                        "Glândula de Vapor",
+                        "Olho Termossensível"
+                    ]
+                },
+                "Escorpião de Tungstênio Ardente": {
+                    "Características": "Criatura blindada por metal natural, constantemente aquecida pelo magma subterrâneo. Seu corpo irradia calor mesmo após a morte.",
+                    "Altura": "1.5 M",
+                    "Localidade": [
+                        "Túneis Minerais",
+                        "Zonas de Vapor"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Ferrão de Tungstênio",
+                        "Carapaça Ardente",
+                        "Núcelo de Calor Condensao"
+                    ]
+                },
+                "Gosma de Vapor Corrosivo": {
+                    "Características": "Massa semi-líquida fervente que exala vapor tóxico e corrosivo, formando-se em poças geotérmicas instáveis.",
+                    "Altura": "2 M",
+                    "Localidade": [
+                        "Poças Geotérmicas",
+                        "Galerias Úmidas"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Essência de Vapor Corrosivo",
+                        "Núcelo Gelatinoso Aquecido",
+                        "Resíduo Químico"
+                    ]
+                },
+                "Filhote de Wyrm Laval": {
+                    "Características": "Uma criatura serpentina recém-formada, nascida diretamente das fissuras vulcânicas. Seu corpo é composto de rocha negra ainda frágil, com pequenas rachaduras por onde a lava escapa em um brilho pulsante. Apesar de pequeno, é extremamente agressivo e territorial, atacando qualquer coisa que se aproxime de sua área de alimentação. Seus movimentos são rápidos e erráticos, alternando entre rastejar pelo solo e mergulhar em fendas quentes.",
+                    "Altura": "1.5 M",
+                    "Localidade": [
+                        "Fissuras Vulcânicas",
+                        "Túmeis Quentes",
+                        "Bordas de Rios de Lava"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Presa Vulcânica",
+                        "Escama de Wyrm Laval",
+                        "Sangue de Lava Coagulado"
+                    ]
+                }
+            },
+            "Nível 3 - Câmara da Lava": {
+                "Larva de Lava Cristalizada": {
+                    "Características": "Criatura parasita que se alimenta do calor residual da lava, revestida por cristais incandescentes que crescem ao longo do corpo.",
+                    "Altura": "1.5 M",
+                    "Localidade": ["Câmara da Lava"],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Cristal Magmático",
+                        "Casca Incandescente"
+                    ]
+                },
+                "Filhote de Wyrm Laval": {
+                    "Características": "Uma criatura serpentina recém-formada, nascida diretamente das fissuras vulcânicas. Seu corpo é composto de rocha negra ainda frágil, com pequenas rachaduras por onde a lava escapa em um brilho pulsante. Apesar de pequeno, é extremamente agressivo e territorial, atacando qualquer coisa que se aproxime de sua área de alimentação. Seus movimentos são rápidos e erráticos, alternando entre rastejar pelo solo e mergulhar em fendas quentes.",
+                    "Altura": "1.5 M",
+                    "Localidade": [
+                        "Fissuras Vulcânicas",
+                        "Túneis Quentes",
+                        "Bordas de Rios de Lava"
+                    ],
+                    "Raridade": "Média",
+                    "Drops": [
+                        "Presa Vulcânica",
+                        "Escama de Wyrm Laval",
+                        "Sangue de Lava Coagulado"
+                    ]
+                },
+                "Wyrm Laval Jovem": {
+                    "Características": "Uma versão mais jovem e menor do Wyrm Laval, seu corpo ainda está em formação, com placas vulcânicas menos densas e fluxo de lava menos intenso entre as fissuras. Mesmo assim, é uma criatura extremamente perigosa, ágil e territorial. Costuma permanecer próximo a rios menores de lava e fissuras recentes, onde se alimenta de minerais fundidos e criaturas menores. Seu temperamento é agressivo, mas também instintivo, recuando quando gravemente ferido.",
+                    "Altura": "5~7 M",
+                    "Localidade": [
+                        "Rios de Lava",
+                        "Câmara Magmáticas Profundas"
+                    ],
+                    "Raridade": "Média +",
+                    "Drops": [
+                        "Presa Vulcânica",
+                        "Escama de Wyrm Laval",
+                        "Sangue de Lava Coagulado"
+                    ]
+                },
+                "Wyrm Laval Adulto":{
+                    "Características": "Uma serpente colossal nascida do magma vivo do Monte Forst Vein, com um corpo massivo coberto por placas de rocha vulcânica rachada. Lava líquida percorre suas fissuras como sangue, emitindo um brilho intenso que ilumina as cavernas ao redor. Seu movimento é fluido e devastador, podendo nadar através da lava como se fosse água ou rastejar sobre terra sólida, deixando trilhas incandescentes e derretendo o terreno.",
+                    "Altura": "8~12 M",
+                    "Localidade": [
+                        "Rios de Lava",
+                        "Câmara Magmáticas Profundas"
+                    ],
+                    "Raridade": "Díficil +",
+                    "Drops": [
+                        "Presa Vulcânica",
+                        "Escama de Wyrm Laval",
+                        "Sangue de Lava Coagulado"
+                    ]
+                },
+                "Titã de Lava Encarnado": {
+                    "Características": "Um colosso de rocha viva, com rios de lava correndo sob a pele rachada. Cada passo faz o solo tremer.",
+                    "Altura": "7 M",
+                    "Localidade": ["Bordas do Lago de Lava"],
+                    "Raridade": "Díficil +",
+                    "Drops": [
+                        "Coração de Lava Encarnada",
+                        "Fragmento de Rocha Viva",
+                        "Essência Vulcânica"
+                    ]
+                },
+                "Elemtal de Lava": {
+                    "Características": "Uma entidade colossal de magma vivo, lenta e inevitável. Sua simples presença altera o ambiente ao redor.",
+                    "Altura": "8~10 M",
+                    "Localidade": ["Lagos e Rios de Lava"],
+                    "Raridade": "Épico",
+                    "Drops": [
+                        "Fragmento de Essência Elemental de Lava",
+                        "Núclo Magmático Purto",
+                        "Fragmento de Consciência Ígnea"
+                    ]
+                },
+                "O Coração Vivo de Forst Vein": {
+                    "Características": "Um núcleo colossal de magma pulsante, sustentado por colunas de rocha viva. O próprio monte parece respirar através dele.",
+                    "Altura": "10 M (Estrutura)",
+                    "Localidade": ["Câmara Central da Lava"],
+                    "Raridade": "Único",
+                    "Drops": [
+                        "Coração do Forst Vein",
+                        "Essência do Monte Vivo",
+                        "Relíquia Ancestral"
+                    ]
+                }
+            }
         }
     }
 }
