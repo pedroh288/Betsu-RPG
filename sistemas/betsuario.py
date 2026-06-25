@@ -9,9 +9,16 @@ def executar():
     limpar()
     print("\n=== \33[35mBETSUARIO\33[0m ===")
 
+    caminho = os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "dados",
+        "betsuario.json"
+    )
+
     # Carrega o arquivo
     try:
-        with open("dados/betsuario.json", "r", encoding="utf-8") as arquivo:
+        with open(caminho, "r", encoding="utf-8") as arquivo:
             betsuario = json.load(arquivo)
     except FileExistsError:
         print("Arquivo betsuario.json não encontrado")

@@ -13,6 +13,13 @@ def executar():
     limpar()
     print("\n=== \33[35mSPAWN\33[0m ===")
 
+    caminho = os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "dados",
+        "spawn.json"
+    )
+
     # Definir as cores para cada raridade (ANSI escape codes)
     cores_raridade = {
         "Comum": "\033[32m",    # Verde
@@ -23,7 +30,7 @@ def executar():
         "Calamidade": "\033[35m" # Magenta
     }
     try:
-        with open("dados/spawn.json", "r", encoding="utf-8") as arquivo:
+        with open(caminho, "r", encoding="utf-8") as arquivo:
             regioes = json.load(arquivo)
     except FileNotFoundError:
         print("Arquivo spawn.json não encontrado.")
