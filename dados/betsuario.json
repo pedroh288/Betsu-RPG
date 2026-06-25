@@ -456,6 +456,11 @@
                     "Desertos",
                     "Bosques",
                     "Planícies"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Pelagem Escalarte"
                 ]
             },
             "Espírito Verdejante": {
