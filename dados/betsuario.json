@@ -592,5 +592,268 @@
                 ]
             }
         }
+    },
+    "Beloozero": {
+        "Portões de Beloozero a Terra Gélida": {
+            "Coelho Branco": {
+                "Características": "Um simples e adorável coelho orelhudo.",
+                "Altura": "27~33 CM",
+                "Localidade": ["Netanya"],
+                "Raridade": "Fácil",
+                "Drops": ["Couro Comum"]
+            },
+            "Raposa Branca": {
+                "Características": "Uma raposa fria e oportunista.",
+                "Altura": "1 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Pelagem Nevada"
+                ]
+            },
+            "Gambá Friento": {
+                "Características": "Um gambá traiçoeiro e esguio.",
+                "Altura": "1 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Glândula de Fedor Friento",
+                    "Couro Incomum"
+                ]
+            },
+            "Harpia de Brumas Gélidas": {
+                "Características": "Uma criatura majestosa, é uma ave de rapina etérea que habita as regiões de transição para biomas nevados até se adaptar. Sua plumagem, de um branco quase translúcido, confunde-se com a névoa circundante, tornando-a um fantasma alado entre as brumas.",
+                "Altura": "2.5 M",
+                "Localidade": ["Netanya"],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Brumas Gélidas",
+                    "Ossos Congelados de Harpia"
+                ]
+            }
+        },
+        "Tundra": {
+            "Coelho Branco": {
+                "Características": "Um simples e adorável coelho orelhudo.",
+                "Altura": "27~33 CM",
+                "Localidade": [
+                    "Netanya",
+                    "Beloozero"
+                ],
+                "Raridade": "",
+                "Drops": ["Couro Incomum"]
+            },
+            "Raposa Branca": {
+                "Características": "Uma raposa fria e oportunista.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Netanya",
+                    "Beloozero"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Couro Incomum",
+                    "Pelagem Nevada"
+                ]
+            },
+            "Gambá Friento": {
+                "Características": "Um gambá traiçoeiro e esguio.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Netanya",
+                    "Beloozero"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Glândula de Fedor Friento",
+                    "Couro Incomum"
+                ]
+            },
+            "Grolok Almiscarado": {
+                "Características": "Uma criatura imponente e solitária que se assemelha a um boi, seu pêlo espesso, salpicado de neve e cristais de gelo, o tornam quase uma muralha impenetrável por sua resistência.",
+                "Altura": "3 M",
+                "Localidade": [
+                    "Montanhas Geladas",
+                    "Florestas Densas",
+                    "Áreas de Nevasca"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Pelagem Resistente",
+                    "Couro Reforçado"
+                ]
+            },
+            "Corvo Gélido": {
+                "Características": "O Corvo de Gelo é uma criatura astuta e predatória, que se alimenta de viajantes desavisados e de criaturas menores. Seu corpo é coberto por penas de gelo afiadas e seus olhos brilham com um frio azul intenso.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Montanhas Geladas - Dia",
+                    "Florestas Frias",
+                    "Áreas de Nevasca"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Penas Congeladas",
+                    "Olhos frios"
+                ]
+            },
+            "Coruja Nebulosa": {
+                "Características": "Uma criatura etérea e majestosa, sua forma é composta por uma fusão de penas brancas imaculadas, gelo cintilante e o próprio ar frio do inverno. Suas asas, que se abrem para revelar um padrão de flocos de neve, a tornam praticamente invisível na neve.",
+                "Altura": "2 M",
+                "Localidade": [
+                    "Montanhas Geladas - Noite",
+                    "Florestas Frias",
+                    "Áreas de Nevasca"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Asas Nebulosas",
+                    "Gelo Cintilante"
+                ]
+            },
+            "Sneegk": {
+                "Características": "É uma criatura da natureza, feita inteiramente de neve e gelo. Sua forma é maleável, o que o torna um adversário imprevisível, mas geralmente pacífica, a menos que seja atacada.",
+                "Altura": "50 CM",
+                "Localidade": ["Áreas Nevadas"],
+                "Raridade": "Média",
+                "Drops": ["Núcleo de Água Super-Resfriada"]
+            },
+            "Harpia de Brumas Gélidas": {
+                "Características": "Uma criatura majestosa, é uma ave de rapina etérea que habita as regiões de transição para biomas nevados até se adaptar. Sua plumagem, de um branco quase translúcido, confunde-se com a névoa circundante, tornando-a um fantasma alado entre as brumas.",
+                "Altura": "2.5 M",
+                "Localidade": [
+                    "Netanya",
+                    "Beloozero"
+                ],
+                "Raridade": "Díficil",
+                "Drops": [
+                    "Brumas Gélidas",
+                    "Ossos Congelados de Harpia"
+                ]
+            },
+            "Gigante Glacial": {
+                "Características": "O Gigante Glacial é uma criatura imensa e massiva, feita de gelo antigo e rocha congelada. É uma criatura que vaga pelas terras geladas, geralmente em hibernação. Pode ser violento e territorial caso perceba possíveis ameaças.",
+                "Altura": "45 M",
+                "Localidade": [
+                    "Campos de Neve Extensos",
+                    "Montanhas Congeladas",
+                    "Lagos de Água Congelada"
+                ],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Fragmentos Glaciais",
+                    "Núcleo de Neves",
+                    "Fragmento de Essência Gigante Glacial",
+                    "Freezianite"
+                ]
+            }
+        },
+        "Caminho dos Ecos Distorcidos": {
+            "Espectro Congelado": {
+                "Características": "Formas humanoides translúcidas, envoltas por uma névoa fria. Seus rostos são contorcidos em uma expressão de dor silenciosa, e suas mãos se transformam em garras afiadas de gelo.",
+                "Altura": "1.78 M",
+                "Localidade": [
+                    "Biomas Gélidos",
+                    "Cemitérios Frios"
+                ],
+                "Raridade": "Média",
+                "Drops": ["Ectoplasma Gélida"]
+            },
+            "Carcaça Congelada": {
+                "Características": "Corpos de guerreiros em armaduras desgastadas e enferrujadas, com partes do corpo cobertas por uma camada de gelo e fuligem. Seus olhos brilham com uma luz azul gélida, e eles se movem com a rigidez de um cadáver.",
+                "Altura": "1.85 M",
+                "Localidade": [
+                    "Biomas Gélidos",
+                    "Cemitérios Frios"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Partes de Armadura Quebradas",
+                    "Carne Poder",
+                    "Raízes da Morte",
+                    "Fuligem Túnebre"
+                ]
+            },
+            "Ghoul de Gelo": {
+                "Características": "Criaturas esqueléticas e esguias, com pele pálida e translúcida. Suas unhas e dentes são longos e afiados, com uma ponta de gelo brilhante. Seus olhos emitem uma luz fria e amarga.",
+                "Altura": "1.85 M",
+                "Localidade": [
+                    "Biomas Gélidos",
+                    "Cemitérios Frios"
+                ],
+                "Raridade": "Média",
+                "Drops": [
+                    "Garras Gélidas",
+                    "Ossos de Ghoul",
+                    "Raízes da Morte",
+                    "Secreção Infecciosa"
+                ]
+            },
+            "Fantasma Desesperado": {
+                "Características": "Um fantasma mais etéreo e translúcido que os espectros, geralmente flutuando a uma pequena distância do chão. Seu rosto é uma máscara de puro terror, e emana uma aura de frio mais intensa que a dos espectros.",
+                "Altura": "1.58 M",
+                "Localidade": [
+                    "Biomas Gélidos",
+                    "Cemitérios Frios"
+                ],
+                "Raridade": "Média +",
+                "Drops": [
+                    "Ectoplasma",
+                    "Essência do Desespero"
+                ]
+            },
+            "Necro-Amálgama": {
+                "Características": "Uma monstruosidade imensa e grotesca, construída a partir do congelamento de dezenas de corpos de aventureiros caídos e seus tormentos, fundidos com blocos de gelo de alta densidade e terra de cemitério. Ele se move como um quadrúpede desajeitado, mas possui braços de gelo afiado capazes de fatiar rochas. O eco de cinquenta almas congeladas grita simultaneamente de dentro de seu peito translúcido. ",
+                "Altura": "4.5 M",
+                "Localidade": [
+                    "O Centro do Caminho dos Ecos",
+                    "Cemitérios Gélidos"
+                ],
+                "Raridade": "Díficil +",
+                "Drops": [
+                    "Espólio dos Ecos",
+                    "Bloco de Matéria Corrompida",
+                    "Núcleo Necrótico"
+                ]
+            },
+            "Cavalaria Espectral e Baktsu": {
+                "Características": "Uma alma distorcida de um guerreiro que morreu junto de seu amado cavalo, a negatividade, rancor e remorsos deram espaço para espíritos negativos transformarem sua casca em uma criatura.",
+                "Altura": "4 M",
+                "Localidade": ["Cemitérios Gélidos"],
+                "Raridade": "Épico",
+                "Drops": [
+                    "Fragmento de Essência (Lamento Espectral)",
+                    "Ectoplasma",
+                    "Raízes da Morte",
+                    "Lança Quebrada",
+                    "Armadura Quebrada",
+                    "Ossada Bakotsu"
+                ]
+            }
+        },
+        "Tundra Congelada": {
+            "Grolok Almiscarado": {
+                "Características": "Uma criatura imponente e solitária que se assemelha a um boi, seu pêlo espesso, salpicado de neve e cristais de gelo, o tornam quase uma muralha impenetrável por sua resistência.",
+                "Altura": "3 M",
+                "Localidade": ["Ambientes Gélidos"],
+                "Raridade": "Média",
+                "Drops": [
+                    "Pelagem Resistente",
+                    "Couro Reforçado"
+                ]
+            },
+            "Corvo Gélido": {
+                "Características": "O Corvo de Gelo é uma criatura astuta e predatória, que se alimenta de viajantes desavisados e de criaturas menores. Seu corpo é coberto por penas de gelo afiadas e seus olhos brilham com um frio azul intenso.",
+                "Altura": "1 M",
+                "Localidade": [
+                    "Montanhas Geladas",
+                    "Florestas Frias",
+                    "Áreas de Nevasca"
+                ],
+                "Raridade": "Média",
+                "Drops": []
+            }
+        }
     }
 }
