@@ -1,7 +1,3 @@
 # Cache do Python
 __pycache__/
 *.pyc
-
-# Pastas de teste
-Teste/
-testes/
