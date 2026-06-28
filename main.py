@@ -1,11 +1,10 @@
 import os
-import sistemas as sistemas
+import sistemas
 
 VERSAO = "0.1"
 
 def limpar():
-    os.system("clear")  # Linux
-    # os.system("cls")  # Windows
+    os.system("cls" if os.name == "nt" else "clear")
 
 def mostrar_menu():
     print(f"""
@@ -24,51 +23,123 @@ def mostrar_menu():
                     BETSU {VERSAO}
     """)
 
-    print("[1] Betsuário")
-    print("[2] Status")
-    print("[3] Spawn")
-    print("[4] Lojas")
-    print("[0] Sair")
-
-def executar_opcao(opcao):
-
-    if opcao == "1":
-        limpar()
-        sistemas.betsuario.executar()
-
-    elif opcao == "2":
-        limpar()
-        sistemas.status.executar()
-
-    elif opcao == "3":
-        limpar()
-        sistemas.spawn.executar()
-
-    elif opcao == "4":
-        limpar()
-        sistemas.lojas.executar()
-
-    elif opcao == "0":
-        print("\nEncerrando BETSU...")
-        return False
-
-    else:
-        print("\nOpção inválida.")
-
+def encerrar():
+    print("\n\nEncerrando BETSU...")
     input("\nPressione ENTER para continuar...")
-    return True
 
-def main():
 
+def menu_jogador():
     while True:
-
         limpar()
         mostrar_menu()
+        print ("""=== betsu rpg - jogador ===""".upper())
+        print("""
+[1] Status
+[2] Betsuário
+[3] Lojas
+[0] Sair
+""")
+        
+        escolha_jogador = input("Escolha: ").strip()
+        try:
+            if escolha_jogador == "1":
+                sistemas.status.executar()
 
-        opcao = input("\nEscolha: ")
+            elif escolha_jogador == "2":
+                sistemas.betsuario.executar()
 
-        if not executar_opcao(opcao):
+            elif escolha_jogador == "3":
+                sistemas.lojas.executar()
+            
+            elif escolha_jogador == "0":
+                break
+
+            else:
+                encerrar()
+
+        except EOFError:
+            encerrar()
+            break        
+
+def menu_mestre():
+    while True:
+        limpar()
+        mostrar_menu()
+        print("""=== betsu rpg - mestre ===""".upper())
+        print("""
+[1] Status
+[2] Betsuário
+[3] Spawn
+[4] Lojas
+[0] Sair
+""")
+        escolha_mestre = input("Escolha: ").strip()
+        try:
+            if escolha_mestre == "1":
+                sistemas.status.executar()
+            
+            elif escolha_mestre == "2":
+                sistemas.betsuario.executar()
+
+            elif escolha_mestre == "3":
+                sistemas.spawn.executar()
+
+            elif escolha_mestre == "4":
+                sistemas.lojas.executar()
+
+            elif escolha_mestre == "0":
+                break
+
+            else:
+                print("\nOpção inválida.")
+                input("\nPressione ENTER para continuar...")
+        
+        except EOFError:
+            encerrar()
             break
+
+def mestre_player():
+    while True:
+        limpar()
+        mostrar_menu()
+        print("""=== ESCOLHA ===""")
+        print(""" 
+[1] Mestre
+[2] Jogador
+[0] Sair
+""")
+        escolha_menu = input("Escolha: ").strip()
+        try:
+            if escolha_menu == "1":
+                menu_mestre()
+
+            elif escolha_menu == "2":
+                menu_jogador()
+
+            elif escolha_menu == "0":
+                print("\nEncerrando BETSU...")
+                input("\nPressione ENTER para continuar...")
+                break
+
+            else:
+                print("\nOpção inválida.")
+                input("\nPressione ENTER para continuar...")
+
+        except EOFError:
+            encerrar()
+            break
+
+
+def main():
+    try:
+        limpar()
+        mestre_player()
+    
+    except KeyboardInterrupt:
+        encerrar()
+
+    except EOFError:
+        encerrar()
 
 if __name__ == "__main__":
     main()
