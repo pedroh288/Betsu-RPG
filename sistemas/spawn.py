@@ -103,12 +103,12 @@ def executar():
                 for i, nome in enumerate(lista_regioes, start=1):
                     print(f"[{i}] - {nome}")
         
-                print("[0] - Voltar/Sair")
+                print("[0] - Voltar")
 
                 opcao = input("\nEscolha: ")
 
                 if opcao == "0":
-                    print("Finalizando o programa!")
+                    print("\nFinalizando o programa!")
                     return
 
                 try:

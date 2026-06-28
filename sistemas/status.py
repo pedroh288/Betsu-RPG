@@ -40,7 +40,7 @@ def executar():
 ***************************************************************
           \33[0m""")
     
-    print('Vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para sair')
+    print('Vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para "Voltar".')
 
     while True:
 

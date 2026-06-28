@@ -55,6 +55,7 @@ def executar():
                 )
 
                 if escolha == 0:
+                    print("\nFinalizando o programa!")
                     return None
 
                 if 1 <= escolha <= len(lista):
