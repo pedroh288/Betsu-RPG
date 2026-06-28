@@ -23,7 +23,8 @@ O projeto foi estruturado para tornar as sessões mais rápidas e imersivas, red
 - [Sistemas](#sistemas).
 
 ## Estrutura do projeto
-O arquivo [main.py](main.py) é o menu que acessa os outros sistemas de automações desenvolvidos.
+O arquivo [main.py](main.py) é o menu que acessa os outros sistemas de automações desenvolvidos. Você seleciona se é um jogador ou o mestre da mesa e, a partir daí, são mostrados sistemas diferentes que facilitam a vida dos participantes.
+
 Os dados ficam dentro da pasta [dados](dados/), tais como os arquivos .json.
 Os sistemas ficam dentro da pasta [sistemas](sistemas/), nessa pasta fica armazenada os sistemas para que o arquivo [main.py](main.py) acesse e execute o devido sistema que o usuário queira.
 
