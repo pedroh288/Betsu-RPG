@@ -11,7 +11,18 @@ def limpar():
 
 def executar():
     limpar()
-    print("\n=== \33[35mSPAWN\33[0m ===")
+    print("""\33[35m
+********************************************************
+*                                                      *
+*     ███████╗██████╗  █████╗ ██╗    ██╗███╗   ██╗     *
+*     ██╔════╝██╔══██╗██╔══██╗██║    ██║████╗  ██║     *
+*     ███████╗██████╔╝███████║██║ █╗ ██║██╔██╗ ██║     *
+*     ╚════██║██╔═══╝ ██╔══██║██║███╗██║██║╚██╗██║     *
+*     ███████║██║     ██║  ██║╚███╔███╔╝██║ ╚████║     *
+*     ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═══╝     *
+*                                                      *
+********************************************************
+          \33[0m""")
 
     caminho = os.path.join(
         os.path.dirname(__file__),
@@ -88,13 +99,13 @@ def executar():
             # --- Interação com o Usuário para Escolha de Reino ---
 
             while True:
-                print(f"\n=== \33[36m{"Reino".upper()}\33[0m ===")
+                print(f"=== \33[36m{"Reino".upper()}\33[0m ===")
                 for i, nome in enumerate(lista_regioes, start=1):
                     print(f"[{i}] - {nome}")
         
                 print("[0] - Voltar/Sair")
 
-                opcao = input("Escolha: ")
+                opcao = input("\nEscolha: ")
 
                 if opcao == "0":
                     print("Finalizando o programa!")
@@ -125,7 +136,7 @@ def executar():
 
                 print("[0] - Sair")
 
-                opcao_regiao = input("Escolha: ")
+                opcao_regiao = input("\nEscolha: ")
 
                 if opcao_regiao == "0":
                     print("Finalizando o programa!")
@@ -153,7 +164,7 @@ def executar():
                 print("[2] - Noite")
                 print("[3] - Madrugada")
                 print("[0] - Sair")
-                horario_opcao = input("Escolha: ")
+                horario_opcao = input("\nEscolha: ")
 
                 if horario_opcao == "0":
                     print("\nFinalizando o programa!")

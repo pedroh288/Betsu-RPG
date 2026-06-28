@@ -27,8 +27,20 @@ def escolha(pergunta):
 
 def executar():
     limpar()
-    print(f"\n=== \33[36m{"Status".upper()}\33[0m ===")
-    print('\nOlá, vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para sair')
+    print("""\33[35m
+***************************************************************
+*                                                             *
+*     ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗     *
+*     ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝     *
+*     ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗     *
+*     ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║     *
+*     ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║     *
+*     ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝     *
+*                                                             *
+***************************************************************
+          \33[0m""")
+    
+    print('Vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para sair')
 
     while True:
 
