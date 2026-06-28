@@ -6,8 +6,7 @@ import os
 import json
 
 def limpar():
-    os.system("clear")  # Linux
-    # os.system("cls")  # Windows
+    os.system("cls" if os.name == "nt" else "clear")
 
 def executar():
     limpar()
