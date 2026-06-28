@@ -31,7 +31,7 @@ def executar():
     try:
         with open(caminho, "r", encoding="utf-8") as arquivo:
             lojas = json.load(arquivo)
-    except FileExistsError:
+    except FileNotFoundError:
         print("Arquivo lojas.json não encontrado")
         return
     except json.JSONDecodeError:
