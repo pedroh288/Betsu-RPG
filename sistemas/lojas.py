@@ -124,7 +124,7 @@ def executar():
 
             else:
                 if chave == "Preço":
-                    print (f"\n{chave}: ${valor}")
+                    print (f"\n{chave}: B${valor}")
                 
                 else:
                     print(f"\n{chave}: {valor}")

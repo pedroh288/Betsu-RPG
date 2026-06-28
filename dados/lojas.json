@@ -56,11 +56,53 @@
                     "Status Bônus": "+6 de Resistência Física",
                     "Durabilidade": 10,
                     "Preço": 40
+                },
+                "Lança Comum": {
+                    "Características": "Uma lança feita de madeira e ferro com um alcance razoável",
+                    "Tipo de Arma": "Média",
+                    "Alcance Físico": "3 M",
+                    "Requisitos": "2 de Força e Agilidade",
+                    "Durabilidade": 4,
+                    "Preço": 25
+                },
+                "Garras de Ferro": {
+                    "Características": "Um par de garras de tamanho pequeno.",
+                    "Tipo de Arma": "Leve",
+                    "Efeito": "+2 de dano em criaturas animalescas.",
+                    "Requisitos": "2 de Força e Agilidade",
+                    "Durabilidade": 5,
+                    "Preço": 25
+                },
+                "Escudo Pequeno": {
+                    "Características": "Um escudo pequeno mas pelo menos quebra um galho.",
+                    "Requisitos":"2 de Constituição",
+                    "Status Bônus":"+2 de Resistência Física",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Escudo Médio": {
+                    "Características": "Um escudo de tamanho médio capaz de te defender dos golpes inimigos.",
+                    "Requisitos":"4 de Constituição",
+                    "Status Bônus": "+4 de Resistência Física",
+                    "Durabilidade": 8,
+                    "Preço": 40
+                },
+                "Picareta de Ferro Comum": {
+                    "Características": "Uma ferramenta utilizada para minerar.",
+                    "Requisitos":"2 de Constituição e 2 de Força",
+                    "Mineração": "1d4+Força ou Constituição + modificadores.",
+                    "Durabilidade": 3,
+                    "Preço": 15
                 }
             },
             "Venda": {
                 "Minério de Cobre": {"Valor": "$5 por Unidade"},
-                "Minério de Ferro": {"Valor": "$15 por Unidade"}
+                "Minério de Ferro": {"Valor": "$15 por Unidade"},
+                "Minério de Estanho": {"Valor":"$30 por Unidade"},
+                "Minério de Chumbo": {"Valor":"$12 por Unidade"},
+                "Minério de Prata": {"Valor":"$20 por Unidade"},
+                "Minério de Tungstênio": {"Valor":"$50 por Unidade"},
+                "Minério de Cobalto": {"Valor": "$6 por Unidade"}
             },
             "Fabricar": {
                 "Serra Críptica Envenenada": {
@@ -69,24 +111,611 @@
                     "Materiais": [
                         "Presas de Aranha: 1",
                         "Glândula de Veneno +1: 2",
-                        "Garras Crípticas: 4"
+                        "Garra Críptica: 4"
                     ],
                     "Efeito": "4 de dano de veneno por 1d5+1 turnos ao fazer contato direto com o inimigo, 2 de sangramento na vida por golpe.",
                     "Durabilidade": 6,
                     "Preço": 30
                 },
                 "Garras de Urso": {
-                    "Observação": "EXCLUSIVO PARA A CLASSEM SELVAGEM",
-                    "Caracterísitcas": "Um par luvas com garras do Urso Pardo de Netanya",
+                    "Observação": "EXCLUSIVO PARA A CLASSE SELVAGEM",
+                    "Características": "Um par luvas com garras do Urso Pardo de Netanya",
                     "Tipo de Arma": "Leve",
                     "Materiais": [
-                        "Garras de Urso: 6",
+                        "Garra de Urso: 6",
                         "Couro Incomum: 2"
                     ],
                     "Efeito": "+8 dano adicional contra criaturas bestiais.",
                     "Durabilidade": 5,
                     "Preço": 20
+                },
+                "Machado deAsa Rígida": {
+                    "Características": "Um grande machado feito com um par de asas rígidas de borboleta.",
+                    "Requisitos": "3 de Constituição e 3 de Força (O acerto pode ser com Constituição ou Força)",
+                    "Tipo de Arma": "Grande",
+                    "Materiais": [
+                        "Asa de Asa-Assasina: 1",
+                        "Couro Incomum: 1"
+                    ],
+                    "Efeito": "Pode causar dano contusivo com acerto estremos.",
+                    "Durabilidade": 5,
+                    "Preço": 15
+                },
+                "Braceletes de Asas Rígidas": {
+                    "Características": "Você envolve seus antebraços com braceletes que possuem uma lâmina de asa nas laterais.",
+                    "Requisitos": "4 de Agilidade (O acerto é com Agilidade).",
+                    "Tipo de Arma": "Média",
+                    "Materiais": [
+                        "Asa de Asa-Assasina: 2",
+                        "Couro Incomum: 2"
+                    ],
+                    "Durabilidade": 5,
+                    "Preço": 8
+                },
+                "Lâmina Envenenda": {
+                    "Características": "Uma adaga com a propriedade especial de envenenar seus inimigos.",
+                    "Tipo de Arma": "Leve",
+                    "Materiais": [
+                        "Presas de Aranha: 1",
+                        "Glândula de Veneno: 2"
+                    ],
+                    "Efeito": "1 de dano de veneno por 1d5 turnos ao fazer contato direto com o inimigo.",
+                    "Durabilidade": 5,
+                    "Preço": 15
+                },
+                "Lâmina Oculta do Assasino": {
+                    "Observação": "EQUIPAMENTO SOBREPOSTO",
+                    "Características": "Uma lâmina oculta escondida no antebraço, a lâmina pode ser trocada por uma envenenada.",
+                    "Tipo de Arma":"Leve",
+                    "Materiais": [
+                        "Presas de Aranha: 2",
+                        "Glândula de Veneno: 1",
+                        "Fios de Prata: 2",
+                        "Couro Incomum: 1"
+                    ],
+                    "Efeito": "1 de dano de veneno por 1d5 turnos ao fazer contato direto com o inimigo.",
+                    "Durabilidade": 8,
+                    "Preço": 25
+                },
+                "Lâmina Envenenada Aprimorada": {
+                    "Características": "Uma adaga com uma alta capacidade de envenenar seus inimigos.",
+                    "Tipo de Arma": "Leve",
+                    "Materiais": [
+                        "Presas de Aranha: 1",
+                        "Glândula de Veneno +1: 1"
+                    ],
+                    "Efeito": "2 de dano de veneno por 1d5+1 turnos ao fazer contato direto com o inimigo.",
+                    "Durabilidade": 6,
+                    "Preço": 20
+                },
+                "Escudo do Roedor": {
+                    "Características": "Um escudo de tamanho médio feito com os dentes de um Rei dos Ratos, possui uma boa capacidade para bloquear golpes.",
+                    "Materiais": [
+                        "Presas do Roedor: 4"
+                    ],
+                    "Requisitos":"5 de Constituição",
+                    "Status Bônus":"+6 de Resistência Física",
+                    "Durabilidade": 10,
+                    "Preço": 30
+                },
+                "Escavação do Roedor": {
+                    "Características": "Uma forte picareta que tem como sua base dentes de Rei do Ratos.",
+                    "Materiais": [
+                        "Presas do Roedor: 4"
+                    ],
+                    "Requisitos": "4 de Constituição e 4 de Força",
+                    "Mineração": "2d6 + Força",
+                    "Durabilidade": 6,
+                    "Preço": 20
+                },
+                "Lança Impetuosa": {
+                    "Características":  "Uma lança bruta feita a partir da presas do Javelin Impetuoso",
+                    "Tipo de Arma": "Grande",
+                    "Materiais": [
+                        "Presas Impetuosas: 1",
+                        "Couro Incomum: 2"
+                    ],
+                    "Alcançe Físico": "3 M",
+                    "Requisitos": "4 de Força, Constituição e Agilidade",
+                    "Habilidade Especial": "Aceleração Furiosa:\nNo turno que se move pelo menos 9 metros, ganha +3 em agilidade. Esse efeito acumula até um máximo de 9 e só permanece no turno da ativação da habilidade. 3 usos por combate.",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Alabarda Impetuosa": {
+                    "Características": "Uma alabarda brutal feita a partir da presas do Javelin Alabarda",
+                    "Tipo de Arma": "Grande",
+                    "Materiais": [
+                        "Presas Alabardas: 1",
+                        "Couro Incomum: 2"
+                    ],
+                    "Alcaçe Físico": "3 M",
+                    "Requisitos": "4 de Força e Constituição",
+                    "Habilidade Especial": "Ímpeto Furioso:\nAo se distanciar até o máximo de seu deslocamento você faz uma investida violenta contra o alvo em seu caminho. Se o ataque acertar, o alvo sofre 20+força de dano e deve fazer um teste de constituição (15N+). Se falhar, o alvo é empurrado até metade dos metros percorridos em linha reta na direção escolhida pelo usuário, além do dano se tornar contusivo.",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Machado de Chifres do Guardião": {
+                    "Características": "Um grande machado feito com a bela galhada de Zevantes e suas vinhas",
+                    "Tipo de Arma": "Colossal (O acerto pode ser girado com Força ou Constituição",
+                    "Materiais": [
+                        "Chifres de Zevante: 1",
+                        "VInhas de Zevantes: 1",
+                        "Couro Raro: 1"
+                    ],
+                    "Habilidade Especial": "Investida Furiosa:\nUma investida poderosa, causando 15 de dano físico+dados de força + 3 de dano a cada 2 metros andados antes do ataque, o golpe arremessa seus inimigos para a mesma quantidade de metros que havia se movimentado antes do golpe. Custo 40 stamina.",
+                    "Durabilidade": 12,
+                    "Preço": 50
                 }
+            }
+        },
+        "Loja do Aertesão": {
+            "Comprar": {
+                "Bolsa Média": {
+                    "Características": "Uma bolsa de couro de tamanho médio",
+                    "Capacidade": 20,
+                    "Preço": 20
+                },
+                "Bolsa Grande": {
+                    "Características": "Uma bolsa de couro de tamanho grande",
+                    "Capacidade": 25,
+                    "Preço": 30
+                },
+                "Bolsa de Carga (Montaria)": {
+                    "Características": "Uma grande bolsa de couro projetada para ser equipada em sua montaria",
+                    "Capacidade": 35,
+                    "Preço": 45
+                },
+                "Kit de Costura": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE TECELÃO",
+                    "Características": "Um kit com utensílios para costura",
+                    "Preço": 10
+                },
+                "Carretel de Fios": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE TECELÃO",
+                    "Características": "Um emaranhado de fios com algumas funcionalidades",
+                    "Comprimento": "5 M",
+                    "Preço": 15
+                }
+            } ,
+            "Vender": {
+                "Couro Comum": {"Valor": "$5 por Unidade"},
+                "Couro Incomum": {"Valor":"$15 por Unidade"},
+                "Couro Raro": {"Valor":"$35 por Unidade"},
+                "Fios de Prata": {"Valor":"$10 por Unidade"},
+                "Asas de Morcego": {"Valor":"$10 por Unidade"},
+                "Penugem Críptica": {"Valor": "$8 por Unidade"}
+            },
+            "Fabricação": {
+                "Armadura Reforçada de Bestas": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE BESTA, DOMADOR E SELVAGEM",
+                    "Características": "Uma armadura feita a partir de peles de caça, excelente para se camuflar.",
+                    "Materiais": [
+                        "Couro Raro: 2",
+                        "Couro Incomum: 4"
+                    ],
+                    "Requisitos": "3 de Constituição e 3 de Agilidade",
+                    "Efeito": "Bônus de furtividade +1 e movimentação a cada 4 níveis de personagem.",
+                    "Status Bônus": "+4 de Resistência Física",
+                    "Durabilidade": 8,
+                    "Preço": 30
+                },
+                "Armadura de Exoesqueleto Negro": {
+                    "Características": "Um traje feito a partir de um exoesqueleto resistente e couro de criaturas.",
+                    "Materiais": [
+                        "Couro Raro: 4",
+                        "Exoesqueleto da Viúva: 1"
+                    ],
+                    "Requisitos": "3 de Constituição",
+                    "Efeito": "Veneno ou corrosão não são eficazes contra  a quebra de durabilidade dessa armadura, é reduzido pela metade, caso o dano seja 1 ele é anulado.",
+                    "Status Bônus": "+6 de Resistência Física",
+                    "Durabilidade": 8,
+                    "Preço": 38
+                },
+                "Armadura Críptica": {
+                    "Características": "Uma armadura feita a partir de couro com enfeites de penas e uma bela capa emplumada.",
+                    "Materiais": [
+                        "Couro Raro: 4",
+                        "Penugem Críptica: 8"
+                    ],
+                    "Requisitos": "5 de Constituição",
+                    "Efeito": "Permite o jogador planar por um curto período.",
+                    "Status Bônus": "+6 de Resistência Física",
+                    "Durabilidade": 8,
+                    "Preço": 38
+                },
+                "Armadura de Couro Reforçado": {
+                    "Caracterísitcas": "Uma armadura feita a partir de couro de criaturas poderosas.",
+                    "Materiais": [
+                        "Couro Raro: 3"
+                    ],
+                    "Requisitos": "4 de Constituição",
+                    "Status Bônus": "+4 de Resistência Física",
+                    "Durabilidade": 6,
+                    "Preço": 30
+                },
+                "Luva Borrifador de Perfume": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE PERFUMISTA\nPerfumistas, por conta do seu conhecimento, não gasta ação para recarregar essa arma.",
+                    "Características": "Uma luva projetada para armazenar perfumes e disparar (considerado uma arma média a distância).",
+                    "Uso": "Consegue armazenar o conteúdo de até 2 perfumes e disparar de 3 formas diferentes, primeiro em uma área de 5 metros, segundo pode disparar um jato com alcance de 7 metros e terceiro um disparo forte com +5 de vantagem em acerto utilizando todo o perfume de uma vez.",
+                    "Materiais": [
+                        "Fios de Prata: 2",
+                        "Couro de Criatura Média: 2",
+                        "Glândula de Odor: 2"
+                    ],
+                    "Requisitos": "3 de Inteligência",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Luva de Absorção de Perfume": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE PERFUMISTA",
+                    "Características": "Uma luva projetada para armazenar perfumes e absorver.",
+                    "Materiais": [
+                        "Fios de Prata: 2",
+                        "Couro de Criatura Média: 2",
+                        "Glândula de Odor: 2",
+                        "Língua de Asa-Assasina: 1"
+                    ],
+                    "Requisitos": "3 de Inteligência",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Casaco de Raposa Escalarte": {
+                    "Característica": "Uma roupa feita a partir da pelagem de raposa escarlate, mantendo o usuário aquecido.",
+                    "Materiais": [
+                        "Pelagem Escalarte: 5"
+                    ],
+                    "Status Bônus": "Diminui em 10 o dano recebido de gelo e neve. Matem o usuário aquecido.",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Rasposa de Raposa Branca": {
+                    "Características": "Uma roupa feita a partir da pelagem de raposa branca, mantendo o usuário protegido do calor.",
+                    "Materiais": [
+                        "Pelagem Nevadas: 5"
+                    ],
+                    "Status Bônus": "Diminui em 10 o dano recebido de fogo e superaquecimento. Protege o usuário do calor.",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Roupas de Gato": {
+                    "Características": "Uma roupa feita a partir de pelos de gato, deixa o usuário bizarramente carismático.",
+                    "Materiais": [
+                        "Pelagem Felina: 5"
+                    ],
+                    "Status Bônus": "Ganha +5 de modificador de carisma.",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Cat Gun": {
+                    "Características": "Bizarramente uma arma de gato, mas especificamente uma arma projetada para ter um design de gato e atirar bolas de pelo.",
+                    "Tipo de Arma": "Arma Média a Distância",
+                    "Materiais": [
+                        "Pelagem Felina: 3",
+                        "Fios de Prata: 2",
+                        "Couro Incomum: 1"
+                    ],
+                    "Status Bônus": "Ganha +3 de modificador de carisma com a arma em mãos.",
+                    "Munição": "Bolas de Pelo",
+                    "Habilidade Especial": "Tiros de Bola de Pelo:\nAtira 1d8+1  bolas de pelo compactadas, causando 4 de dano por bola, cegando o alvo -4 em acerto e esquiva por 1d3+1 turnos.",
+                    "Durabilidade": 5,
+                    "Preço": 30
+                },
+                "Manto de Brumas Rígidas": {
+                    "Observação": "EQUIPAMENTO SOBREPOSTO",
+                    "Características": "Um manto de penugens gélidas com propriedades translúcidas.",
+                    "Materiais": [
+                        "Brumas Gélidas: 3"
+                    ],
+                    "Status Bônus": "Diminui em 10 o dano de gelo e neve recebido e +2 de agilidade para esquivar.",
+                    "Durabilidade": 5,
+                    "Preço": 28
+                },
+                "Arco de Brumas": {
+                    "Características": "Um arco feito com materiais de Harpias",
+                    "Tipo de Arma": "Arma Grande a Distância",
+                    "Materiais": [
+                        "Ossos de Harpia: 2",
+                        "Ossos Congelados de Harpia: 2",
+                        "Fios de Prata: 3",
+                        "Brumas Rígidas: 2"
+                    ],
+                    "Requisitos": "2 de Inteligência e 4 de Força",
+                    "Status Bônus": "Ganha +5 em agilidade para disparar, +5 de dano com munições de brumas.",
+                    "Munição": "Flechas e Brumas",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Leque Duplo das Brumas Gêmeas": {
+                    "Características": "Um par de leques de combate feitos a partir de Brumas.",
+                    "Tipo de Arma": "Arma Média (Acerto em Agilidade)",
+                    "Materiais": [
+                        "Ossos de Harpia: 2",
+                        "Brumas Rígidas: 2",
+                        "Brumas Gélidas: 3"
+                    ],
+                    "Requisitos": "4 de Inteligência e 4 de Agilidade",
+                    "Status Bônus": "Ganha +3 em agilidade enquanto estiver em mãos, +5 de dano em criaturas com a condição de resfriamento.",
+                    "Habilidade Especial": "Disparo de Brumas:\nPode gastar 15 mana para disparar 1d8+2 penas, causando 4 de dano por pena e aplicando resfriamento ou 4 de sangramento por 5 turnos. Deve girar 1d2 para saber o efeito aplicado.",
+                    "Durabilidade": 8,
+                    "Preço": 35
+                },
+                "Caralizador Verdejante": {
+                    "Características": "Um Catalisador com o núcleo especial de um espectro",
+                    "Tipo de Arma": "Catalizador",
+                    "Materiais": [
+                        "Núclo de Verdejante: 1",
+                        "Olhos de Zevantes: 1"
+                    ],
+                    "Requisitos": "6 de Inteligência",
+                    "Status Bônus": "Ganha +4 de inteligência para o lançamento de magias e +15 de dano mágico. Usar maldição, magia necrótica ou de fogo reduz 4 de durabilidade por uso.",
+                    "Durabilidade": 8,
+                    "Preço": 50
+                }
+            }
+        },
+        "Loja de Caça": {
+            "Comprar": {
+                "Armadura Leve": {
+                    "Características": "Uma armadura leve que não cobre todas as partes do corpo, mas pelo menos quebra um galho.",
+                    "Requisitos":"2 de Constituição",
+                    "Status Bônus":"+2 de Resistência Física",
+                    "Durabilidade": 5,
+                    "Preço": 20
+                },
+                "Lança Comum": {
+                    "Características": "Uma lança feita de madeira e ferro com um alcance razoável",
+                    "Alcance Físico": "3 M",
+                    "Requisitos": "2 de Força e Agilidade",
+                    "Durabilidade": 4,
+                    "Preço": 25
+                },
+                "Zarabatana": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE DOMADOR",
+                    "Características": "Um instrumento utilizado para alvejar criaturas",
+                    "Alcançe Físico": "5 M",
+                    "Durabilidade": 3,
+                    "Preço": 15
+                },
+                "Dardos Envenenados": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE DOMADOR",
+                    "Características": "Um dardo capaz de envenenar os inimigos",
+                    "Dano": "2 de veneno por 3 turnos.",
+                    "Preço": 5
+                },
+                "Dardo de Sono": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE DOMADOR",
+                    "Características": "Um dardo capaz de adormecer os inimigos",
+                    "Efeito": "Resultado bom causa 1 turno de sono, resultado extremo causa 3 turnos.",
+                    "Preço": 10
+                },
+                "Armadilha de Urso": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE CAÇADOR DE BESTAS",
+                    "Características": "Uma presa de ferro que se prende no inimigo",
+                    "Dano": "5 de dano +3 de sangramento até a criatura se soltar.",
+                    "Preço": 20
+                },
+                "Garras de Besta": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE SELVAGEM",
+                    "Características": "Um par de garras feita com materiais de monstro, arma média.",
+                    "Efeito": "+4 de dano em criaturas animalescas.",
+                    "Requisitos": "2 de Força e Agilidade",
+                    "Durabilidade": 5,
+                    "Preço": 25
+                }
+            },
+            "Vender": {
+                "Olhos de Aranha": {"Valor":"$2 por Unidade"},
+                "Couro Comum": {"Valor":"$5 por Unidade"},
+                "Couro Incomum": {"Valor":"$15 por Unidade"},
+                "Couro Raro": {"Valor": "$35 por Unidade"},
+                "Fios de Prata": {"Valor":"$10 por Unidade"},
+                "Presas de Aranha": {"Valor":"$15 por Unidade"},
+                "Glândula de Feromônio": {"Valor":"$20 por Unidade"},
+                "Glândula de Veneno": {"Valor":"$8 por Unidade"},
+                "Glândula de Odor": {"Valor":"$5 por Unidade"},
+                "Garras de Fera": {"Valor":"$5 por Unidade"},
+                "Presas de Fera": {"Valor":"$15 por Unidade"},
+                "Asas de Morcego": {"Valor":"$10 por Unidade"},
+                "Asas de Assa-Asassina": {"Valor":"$12 por Unidade"},
+                "Presas de Roedor": {"Valor":"$10 por Unidade"},
+                "Garras de Urso": {"Valor":"$10 por Unidade"},
+                "Garras do Colossal": {"Valor":"$20 por Unidade"}
+            }
+        },
+        "Loja de Utilitários": {
+            "Comprar": {
+                "Walkie-Talkie": {
+                    "Características": "Um radinho mágico que facilita a comunicação entre as pessoas, é recarregável com mana e certos lugares podem causar interferência na comunicação",
+                    "Efeito": "Se o grupo estiver dividido, a simples comunicação entre as partes anula a penalidade de FR causada por estar isolado (medo de estar sozinho).",
+                    "Preço": 15
+                },
+                "Lanterna Tática de Longo Alcance": {
+                    "Características": "Uma lanterna capaz de iluminar seu caminho, a luz intensa ajuda a afastar a escuridão e o medo. É recarregável com mana",
+                    "Efeito": "Em ambientes de escuridão profunda, o portador não sofre medo do escuro.",
+                    "Preço": 20
+                },
+                "Suprimentos": {
+                    "Características": "Uma ração de especial feita para longas viagens",
+                    "Efeito": "Ao consumir regenera 15 de saciedade, metade da vida e totaliza as resistências.",
+                    "Capacidade": 20,
+                    "Preço": 5
+                },
+                "Remédio para Resfriado": {
+                    "Características": "Uma mistura de descongestionantes e antitérmicos para aliviar os sintomas da gripe e resfriados.",
+                    "Efeito": "Cura 1d4 de vida e, o mais importante, anula a penalidade de -1 nos testes de percepção (ou outros testes leves de penalidade) que o resfriado ou a gripe costumam impor. O doente continua doente, mas opera em sua capacidade máxima até o próximo descanso.",
+                    "Capacidade": 8,
+                    "Preço": 8
+                },
+                "Filtros de Ar Descartáveis": {
+                    "Características": "Pequenos filtros que se encaixam em máscaras ou lenços, protegendo contra esporos e aerossóis.",
+                    "Efeito": "Oferece vantagem +2N em todos os Testes de Vigor para evitar a contração de doenças transmitidas pelo ar (como gripe ou esporos) em ambientes fechados ou contaminados.",
+                    "Capacidade": 5,
+                    "Preço": 15
+                },
+                "Pílulas de Reforço Imunológico": {
+                    "Características": "Uma dose alta de vitaminas e minerais.",
+                    "Efeito": "Consumida durante o descanso, concede +1N de bônus nos próximos três testes de Vigor feitos para resistir à progressão de uma doença já contraída.",
+                    "Capacidade": 5,
+                    "Preço": 5
+                },
+                "Bomba de Fumaça": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE CAÇADOR DE BESTAS E LADINO\nLugares fechados dobram a duração; vento pode dissipar a fumaça.",
+                    "Características": "Um artifício para fins de furtividade ou fuga.",
+                    "Uso": "Caso o portador jogue em seu pé é tratado com ação livre, caso seja arremessado é necessário acerto, pode ser usado uma vez a cada 5 turnos e o efeito dura 1 turno.",
+                    "Área de Atuação": "3 M",
+                    "Capacidade": 3,
+                    "Preço": 20
+                },
+                "Kit de Barricada Improvisada": {
+                    "Observação":"EXCLUSIVO DO CAMINHO DO CONSTRUTOR",
+                    "Características": "Contém pregos, arame farpado e tábuas leves.",
+                    "Efeito": "Pode ser usado para fortificar um local de descanso. Evita o primeiro ataque ou emboscada durante o descanso.",
+                    "Capacidade": 3,
+                    "Preço": 25
+                },
+                "Tabado Raro": {
+                    "Observação": "Pode adquirir doença grave com o uso excessivo.",
+                    "Características": "Um fumo forte que ajuda a limpar a mente.",
+                    "Efeito": "Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.",
+                    "Capacidade": 10,
+                    "Preço": 5
+                },
+                "Baralho de Cartas": {
+                    "Características": "Um simples e divertido baralho de cartas.",
+                    "Uso": "Serve para passar o tempo e interagir com o grupo.",
+                    "Efeito": "O ato de jogar com outro membro do grupo durante o descanso (longo) permite que ambos os jogadores recebam 1d4+dados de carisma em pontos de FR.",
+                    "Preço": 10
+                },
+                "Recepiente de Poções": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE BRUXOS",
+                    "Características": "Um recipiente utilizado para armazenar o conteúdo das poções.",
+                    "Preço": 10
+                },
+                "Frasco de Perfume": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE PERFUMISTA",
+                    "Características": "Um frasco utilizado como recipiente de perfumes.",
+                    "Alcançe de Borrifo": "2 M",
+                    "Preço": 15
+                },
+                "Kit de Costura": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE TECELÃO",
+                    "Características": "Um kit com utensílios para costura",
+                    "Preço": 10
+                },
+                "Carretel de Fios": {
+                    "Observação": "EXCLUSIVO PARA A CLASSE TECELÃO",
+                    "Características": "Um emaranhado de fios com algumas funcionalidades",
+                    "Comprimento": "5 M",
+                    "Preço": 15
+                }
+            },
+            "Vender": {
+                "Couro Comum": {"Valor": "$5 por Unidade"},
+                "Couro Incomum": {"Valor": "$15 por Unidade"},
+                "Couro Raro": {"Valor": "$35 por Unidade"},
+                "Fios de Prata": {"Valor":"$10 por Unidade"},
+                "Asas de Morcego": {"Valor":"$10 por Unidade"},
+                "Glândula de Odor": {"Valor":"$5 por Unidade"},
+                "Asas de Assa-Asassina": {"Valor":"$12 por Unidade"},
+                "Glândula de Feromônio": {"Valor":"$20 por Unidade"}
+            }
+        },
+        "Posto de Atendimento Médico": {
+            "Kit de Primeiros Socorros": {
+                "Características": "Um kit de alta qualidade com os melhores materiais, perfeitamente organizado para uso rápido e eficiente.",
+                "Efeito": "Quando o socorrista utiliza qualquer de suas habilidades de primeiros socorros que envolvam cura de vida, ele pode rolar a cura duas vezes e escolher o maior resultado (Vantagem na cura), devido à eficiência e qualidade dos materiais.",
+                "Capacidade": 3,
+                "Preço": 20
+            },
+            "Kit de Cirurgia de Campo": {
+                "Características": "Contém ferramentas para lidar com ferimentos complexos.",
+                "Efeito": "Permite ao Socorrista tentar uma cirurgia de campo.\nEm caso de sucesso no teste de Inteligência 15N+, o alvo recupera o dobro do valor de cura de Saúde de um item médico padrão.",
+                "Capacidade": 3,
+                "Preço": 20
+            },
+            "Sedativo Forte": {
+                "Características": "Um agente químico poderoso para acalmar pacientes em pânico.",
+                "Efeito": "Pode ser usado em um aliado no limite de Delírio/Perturbado. O aliado fica Incapacitado por um turno, mas recupera 1d6+inteligência de FR no início do próximo turno dele.",
+                "Capacidade": 10,
+                "Preço": 14
+            },
+            "Luvas Isolantes (Descartáveis)": {
+                "Caracteŕisticas": "Luvas com uma substância para bloquear o toque direto com o trauma, evitando contrair alguma doença contagiosa ou infeccionar alguma ferida de aliados na hora de tratamentos.",
+                "Efeito": "Ao ser usado o dano extra de FR causado pela Desvantagem Custo do Visto ao testemunhar um Colapso ou Morte é reduzido pela metade (arredondado para baixo).",
+                "Capacidade": 20,
+                "Preço": 22
+            },
+            "Suprimentos de Sangue Sintético (Bolsa)": {
+                "Caraceterísticas": "Um item de último recurso.",
+                "Efeito": "Estabiliza instantaneamente um personagem com 0 de vida e o impede de sofrer o dano na FR pelo desmaio. Não cura, apenas mantém a vida.",
+                "Capacidade": 5,
+                "Preço": 22
+            },
+            "Kit de Diagnóstico Rápido": {
+                "Características": "Contém ferramentas para analisar amostras e identificar patógenos comuns rapidamente.",
+                "Efeito": "Permite ao Socorrista realizar um teste de Inteligência com vantagem para identificar a natureza exata de uma doença (ex: gripe, doença grave, contaminação). Isso reduz a dificuldade dos testes de resistência doenças para todos os aliados em -1N por 1 dia.",
+                "Capacidade": 3,
+                "Preço": 15
+            },
+            "Filtros de Ar Descartáveis": {
+                "Características": "Pequenos filtros que se encaixam em máscaras ou lenços, protegendo contra esporos e aerossóis.",
+                "Efeito": "Oferece vantagem +2N em todos os Testes de Vigor para evitar a contração de doenças transmitidas pelo ar (como gripe ou esporos) em ambientes fechados ou contaminados.",
+                "Capacidade": 5,
+                "Preço": 15
+            },
+            "Pílulas de Reforço Imununológico": {
+                "Características": "Uma dose alta de vitaminas e minerais.",
+                "Efeito": "Consumida durante o descanso, concede +1N de bônus nos próximos três testes de Vigor feitos para resistir à progressão de uma doença já contraída.",
+                "Capacidade": 5,
+                "Preço": 5
+            },
+            "Antibiótico de Amplo Espectro": {
+                "Características": "Ajuda a aliviar sintomas graves de doenças respiratórias.",
+                "Efeito": "Cura 1d4+inteligência de vida e remove a penalidade de desvantagem que a doença impõe nos testes de percepção por 6 horas.",
+                "Capacidade": 5,
+                "Preço": 8
+            },
+            "Dose de Adrenalina/Estabilizador (Ampola)": {
+                "Características": "Usada para reanimar ou estabilizar pacientes em estado de choque ou febre extrema.",
+                "Efeito": "Estabiliza instantaneamente a Saúde de um alvo com febre ou doença avançada para 1. Devido ao choque, o alvo sofre uma perda de 1d4+inteligência de FR imediata.",
+                "Capacidade": 5,
+                "Preço": 10
+            },
+            "Remédio para Resfriado": {
+                "Características": "Uma mistura de descongestionantes e antitérmicos para aliviar os sintomas da gripe e resfriados.",
+                "Efeito": "Cura 1d4 de vida e, o mais importante, anula a penalidade de -1 nos testes de percepção (ou outros testes leves de penalidade) que o resfriado ou a gripe costumam impor. O doente continua doente, mas opera em sua capacidade máxima até o próximo descanso.",
+                "Capacidade": 8,
+                "Preço": 8
+            },
+            "Bandagens de Coompressão e Ataduras (Pacote)": {
+                "Características": "Ataduras elásticas e de gaze esterilizada para cobrir e proteger ferimentos.",
+                "Efeito": "Em combate, o Socorrista pode gastar uma ação para aplicar as bandagens, garantindo que um aliado ferido não sofra dano contínuo por sangramento ou infecção venenosa/tóxicas por 1 rodada.",
+                "Capacidade": 5,
+                "Preço": 15
+            }
+        },
+        "Taberna": {
+            "Caneca de Cerveja de Barik": {
+                "Características": "Uma cerveja forte, mas saborosa, que acalma os nervos.",
+                "Efeito": "Consumida durante o descanso, o indivíduo recupera +1d4 extra de FR.",
+                "Preço": 10
+            },
+            "Caneca de Bebida Energética": {
+                "Características": "Uma bebida forte, energética e saborosa, que atiça os nervos.",
+                "Efeito": "Ao consumir, o indivíduo recupera 2d6+constituição de stamina.",
+                "Preço": 10 
+            },
+            "Refeição do Dia": {
+                "Características": "Uma refeição rica e reconfortante, perfeita para aquecer o corpo.",
+                "Efeito": "Recupera 1d4+constituição de vida ao ser consumida.",
+                "Preço": 15
+            },
+            "Tabaco Raro": {
+                "Observação": "Pode adquirir doença grave com o uso excessivo.",
+                "Características": "Um fumo forte que ajuda a limpar a mente.",
+                "Efeito": "Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.",
+                "Capacidade": 10,
+                "Preço": 5
             }
         }
     }
