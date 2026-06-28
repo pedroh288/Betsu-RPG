@@ -90,7 +90,7 @@
                 "Picareta de Ferro Comum": {
                     "Características": "Uma ferramenta utilizada para minerar.",
                     "Requisitos":"2 de Constituição e 2 de Força",
-                    "Mineração": "1d4+Força ou Constituição + modificadores.",
+                    "Mineração": "1d4+Força ou Constituição + Modificadores.",
                     "Durabilidade": 3,
                     "Preço": 15
                 }
@@ -716,6 +716,259 @@
                 "Efeito": "Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.",
                 "Capacidade": 10,
                 "Preço": 5
+            }
+        }
+    },
+    "Bayovia": {
+        "A Casa dos Susurros Silenciados": {
+            "Ritual: Quebra das Amarras": {
+                "Características": "Este ritual é projetado para remover certas maldições e o debuff Assombro, que é infligido por inimigos espectrais.",
+                "Tempo de Ritual": "4 Horas",
+                "Preço": 150,
+                "Custo em Ingredientes": "3 Velas de Sal Sagrado.",
+                "Efeito Principal": "Remoção de Maldições:\nRemove o debuff Assombro e quaisquer outras maldições de Nível 1 ou 2.",
+                "Efeito Secundário": "Resistência:\nConcede uma resistência temporária (24 horas) a receber o debuff Assombro novamente."
+            },
+            "Ritual: Purificação do Limiar": {
+                "Características": "Este é um ritual rápido, focado em estabilizar a mente após uma exposição prolongada a ambientes estressantes.",
+                "Tempo de Ritual": "8 Horas (Substitui um descanso longo)",
+                "Preço": 450,
+                "Custo em Ingredientes": "1 porção de Geleia Estabilizadora.",
+                "Efeito Principal": "Restaura todo o FR perdido do jogador, desde que o valor atual não esteja abaixo de 40% do máximo.",
+                "Efeito Secundário": "Concede Vantagem (+1N) no próximo teste relacionado a FR ao se aproximar dos Caminhos dos Ecos Distorcidos."
+            },
+            "Ritual: Excorcismo do Núcleo": {
+                "Características": "Este é um ritual de alto nível, reservado para quando o jogador está em colapso ou foi corrompido por uma entidade de alto poder.",
+                "Tempo de Ritual": "24 Horas de Meditação e Canto (O jogador fica indisponível, em estado vulnerável).",
+                "Preço": 666,
+                "Custo em Ingredientes": "1 porção de Ectoplasma Instável e 1 Fragmento de Essência.",
+                "Efeito Principal": "Restaura todo o FR perdido, remove todas as maldições (Nível 3+) e cura qualquer Trauma mental.",
+                "Efeito Bônus": "O jogador ganha uma resistência maior a perda de sanidade, reduzindo pela metade qualquer perda de FR  nos próximos 3 dias."
+            }
+        },
+        "Grande Loja Geral": {
+            "Comprar": {
+                "Gema de Mana Congelada": {
+                    "Características": "Uma pequena pedra que armazena mana no seu interior. É recarregável por bruxos e magos.",
+                    "Efeito": "Restaura 6d6+Inteligência de Mana imediatamente, pode ser utilizado em combate.",
+                    "Capacidade": 5,
+                    "Preço": 15
+                },
+                "Pederneira de Magia de Fogo": {
+                    "Características": "Um pedaço de sílex com uma pequena runa de fogo.",
+                    "Efeito": "Permite acender fogueiras instantaneamente, ignorando desvantagens de clima (como neve ou umidade), fundamental na Tundra.",
+                    "Preço": 12
+                },
+                "Roupas Térmicas de Neve": {
+                    "Observação":"EQUIPAMENTO SOBREPOSTO",
+                    "Características": "Feitas de couro de Grolok.",
+                    "Efeito": "Concede +1N em todos os Testes de Vigor (Constituição) para resistir à exaustão por frio durante longas jornadas na Tundra, mantém os jogadores aquecidos além de conceder +4 de resistência física",
+                    "Preço": 50
+                },
+                "Velas de Sal Sagrado": {
+                    "Características":"Velas feitas com sal consagrado, queimar um pouco ajuda a criar um campo de proteção.",
+                    "Efeito": "Se acesa durante o descanso, impede que Espectros, Fantasmas e Ghouls se aproximem em um raio de 5 metros, evitando emboscadas espectrais.",
+                    "Preço": 25
+                },
+                "Filtros de Luz (Para Lanterna)": {
+                    "Características": "Filtros de cor azul-escura para a Lanterna Tática de Longo Alcance.",
+                    "Efeito": "A luz da lanterna passa a ter a propriedade *Luz Azul Mágica*.\nEla não afasta mais o medo , mas permite que o portador use a habilidade Meta Visão em locais escuros, compensando a desvantagem da habilidade.",
+                    "Preço": 10
+                },
+                "Ração de Sobrevivência": {
+                    "Características": "Carne de Esquilo/Coelho + Fruto da Tundra.",
+                    "Efeito": "Restaura metade da Vida e Resistência. O FR recuperado é +2d4 dobrado se consumido quente (necessita da Pederneira de Magia de Fogo).",
+                    "Capacidade": 20,
+                    "Preço": 10
+                },
+                "Walkie-Talkie": {
+                    "Características": "Um radinho mágico que facilita a comunicação entre as pessoas, é recarregável com mana e certos lugares podem causar interferência na comunicação",
+                    "Efeito": "Se o grupo estiver dividido, a simples comunicação entre as partes anula a penalidade de FR causada por estar isolado (medo de estar sozinho).",
+                    "Preço": 15
+                },
+                "Saco de Dormir Térmico": {
+                    "Características":"Um saco de dormir confortável e quentinho.",
+                    "Efeito": "Substitui a necessidade de fogueira para evitar a exaustão por Frio em 1 descanso.",
+                    "Preço": 45
+                },
+                "Lanterna Tática de Longo Alcance": {
+                    "Características": "Uma lanterna capaz de iluminar seu caminho, a luz intensa ajuda a afastar a escuridão e o medo. É recarregável com mana",
+                    "Efeito": "Em ambientes de escuridão profunda, o portador não sofre medo do escuro.",
+                    "Preço": 20
+                },
+                "Suprimentos": {
+                    "Características": "Uma ração de especial feita para longas viagens",
+                    "Efeito": "Ao consumir regenera 15 de saciedade, metade da vida e totaliza as resistências.",
+                    "Capacidade": 20,
+                    "Preço": 5
+                },
+                "Remédio para Resfriado": {
+                    "Características": "Uma mistura de descongestionantes e antitérmicos para aliviar os sintomas da gripe e resfriados.",
+                    "Efeito": "Cura 1d4 de vida e, o mais importante, anula a penalidade de -1 nos testes de percepção (ou outros testes leves de penalidade) que o resfriado ou a gripe costumam impor. O doente continua doente, mas opera em sua capacidade máxima até o próximo descanso.",
+                    "Capacidade": 8,
+                    "Preço": 8
+                },
+                "Filtros de Ar Descartáveis": {
+                    "Características": "Pequenos filtros que se encaixam em máscaras ou lenços, protegendo contra esporos e aerossóis.",
+                    "Efeito": "Oferece vantagem +2N em todos os Testes de Vigor para evitar a contração de doenças transmitidas pelo ar (como gripe ou esporos) em ambientes fechados ou contaminados.",
+                    "Capacidade": 5,
+                    "Preço": 15
+                },
+                "Pílulas de Reforço Imunológico": {
+                    "Características": "Uma dose alta de vitaminas e minerais.",
+                    "Efeito": "Consumida durante o descanso, concede +1N de bônus nos próximos três testes de Vigor feitos para resistir à progressão de uma doença já contraída.",
+                    "Capacidade": 5,
+                    "Preço": 5
+                },
+                "Bomba de Fumaça": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE CAÇADOR DE BESTAS E LADINO\nLugares fechados dobram a duração; vento pode dissipar a fumaça.",
+                    "Características":"Um artifício para fins de furtividade ou fuga.",
+                    "Efeito": "urtividade instantânea, +3 de esquiva e o adversário tem desvantagem -3 em acertos.",
+                    "Uso": "Caso o portador jogue em seu pé é tratado com ação livre, caso seja arremessado é necessário acerto, pode ser usado uma vez a cada 5 turnos e o efeito dura 1 turno.",
+                    "Área de Atuação": "3 M",
+                    "Capacidade": 3,
+                    "Preço": 20
+                },
+                "Kit de Barricada Improvisada": {
+                    "Observação":"EXCLUSIVO DO CAMINHO DO CONSTRUTOR",
+                    "Características": "Contém pregos, arame farpado e tábuas leves.",
+                    "Efeito": "Pode ser usado para fortificar um local de descanso. Evita o primeiro ataque ou emboscada durante o descanso.",
+                    "Capacidade": 3,
+                    "Preço": 25
+                },
+                "Tabado Raro": {
+                    "Observação":"Pode adquirir doença grave com o uso excessivo.",
+                    "Características": "Um fumo forte que ajuda a limpar a mente.",
+                    "Efeito": "Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.",
+                    "Capacidade": 10,
+                    "Preço": 5
+                },
+                "Baralho de Cartas": {
+                    "Características": "Um simples e divertido baralho de cartas.",
+                    "Uso":"Serve para passar o tempo e interagir com o grupo.",
+                    "Efeito": "O ato de jogar com outro membro do grupo durante o descanso (longo) permite que ambos os jogadores recebam 1d4+dados de carisma em pontos de FR.",
+                    "Preço": 10
+                },
+                "Frasco de Perfume": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE PERFUMISTA",
+                    "Características": "Um frasco utilizado como recipiente de perfumes.",
+                    "Alcançe de Borrifo": "2 M",
+                    "Preço": 15
+                },
+                "Carretel de Fios": {
+                    "Observação":"EXCLUSIVO PARA A CLASSE TECELÃO",
+                    "Características":  "Um emaranhado de fios com algumas funcionalidades",
+                    "Comprimento": "5 M",
+                    "Preço": 15
+                }
+            },
+            "Vender": {
+                "Couro Comum": {"Valor":"$5 por Unidade"},
+                "Couro Incomum": {"Valor":"$15 por Unidade"},
+                "Couro Raro": {"Valor": "$35 por Unidade"},
+                "Fios de Prata": {"Valor":"$10 por Unidade"},
+                "Asas de Morcego": {"Valor":"$10 por Unidade"},
+                "Glândula de Odor": {"Valor":"$5 por Unidade"},
+                "Asas de Assa-Asassina": {"Valor":"$12 por Unidade"},
+                "Glândula de Feromônio": {"Valor": "$20 por Unidade"},
+                "Pelagem": {"Valor": "..."}
+            }
+        },
+        "Hospedeira - A casa do Viajante": {
+            "Descanso (Quarto Premium)": {
+                "Efeito": "Cura Total: Recupera 100% de Vida,5% de FR e anula todos os efeitos de Exaustão ou Resfriado leves no final do descanso.",
+                "Preço": 40
+            },
+            "Baú Alugado (Serviço Semanal)": {
+                "Efeito": "Armazenamento seguro de itens, fora do limite de carga do jogador. Essencial antes de grandes expedições.",
+                "Preço": 15
+            },
+            "Bolsa de Água Quente": {
+                "Efeito": "Item de bolso que concede Vantagem +1N em testes de Constituição para resistir a penalidades por Frio Extremo por 1 hora.",
+                "Preço": 25
+            },
+            "Perfume da Matrona": {
+                "Efeito": "Um perfume discreto que Katerina vende para *refinar a pessoa*. Concede +2 em testes de Carisma em interações sociais.",
+                "Preço": 35
+            }
+        },
+        "Posta de Troca dos Exploradores": {
+            "Comprar": {
+                "Capacete com Suporte de Lâmpada": {
+                    "Características": "Um capacete muito utilizado pelos exploradores em cavernas.",
+                    "Efeito": "+1 Resistência Física. Essencial para suportar pequenos desabamentos. O suporte permite prender a Lanterna Tática, liberando uma das mãos.",
+                    "Preço": 45
+                },
+                "Máscara de Filtragem Quiímica": {
+                    "Características": "Uma máscara feita para filtrar o ar em áreas poluídas com gases tóxicos.",
+                    "Efeito": "Oferece Vantagem +2N em testes para resistir a gases venenosos, esporos ou névoas tóxicas.",
+                    "Preço": 25
+                },
+                "Sonda Geológica de Precisão": {
+                    "Características": "Uma ferramenta de auxílio em minerações.",
+                    "Efeito": "Usada antes da mineração (Ação). Garante Vantagem +1N no próximo teste para extrair um minério raro.",
+                    "Preço": 63
+                },
+                "Kit de Reparo (Ferro)": {
+                    "Características": "Um kit de reparo de uso único.",
+                    "Efeito": "Restaura 1d4 de Durabilidade em ferramentas ou armas de ferro.",
+                    "Preço": 25
+                },
+                "Picareta de Ferro Comum": {
+                    "Características": "Uma ferramenta utilizada para minerar.",
+                    "Requisitos": "2 de Constituição e 2 de Força",
+                    "Mineração":"1d4+Força ou Constituição + Modificadores.",
+                    "Durabilidade": 8,
+                    "Preço": 55
+                }
+            },
+            "Vender": {
+                "Minério de Cobre": {"Valor":"$5 por Unidade"},
+                "Minério de Ferro": {"Valor":"$15 por Unidade"},
+                "Minério de Estanho": {"Valor":"$30 por Unidade"},
+                "Minério de Chumbo": {"Valor":"$12 por Unidade"},
+                "Minério de Tungstênio": {"Valor":"$50 por Unidade"},
+                "Minério de Cobalto": {"Valor":"$6 por Unidade"},
+                "Obsidina Fundida": {"Valor":"$80 por Unidade"},
+                "Minério de Berilium": {"Valor":"$150 por Unidade"},
+                "Cristal de Gelo Puro": {"Valor":"$40 por Unidade"}
+            }
+        },
+        "Taberna": {
+            "Comprar": {
+                "Grog Quente Cremoso": {
+                    "Observação": "Se consumido em excesso(5+), pode causar penalidade de -2 em suas rolagens até o próximo dia.",
+                    "Características": "Uma bebida alcoólica com especiarias da tundra, servida quente.",
+                    "Efeito": "Consumido durante o descanso, o indivíduo recupera +3d6 extra de FR.",
+                    "Preço": 15
+                },
+                "Chá de Sálvia e Frutos": {
+                    "Características": "Uma bebida suave e doce.",
+                    "Efeito": "Consumido antes de uma interação social, concede +2 em testes de Carisma por 1 hora.",
+                    "Preço": 10
+                },
+                "Carne de Corvo Gélido no Guisado": {
+                    "Características": "Uma refeição farta e rica em proteínas.",
+                    "Efeito": "Recupera 2d4+Constituição de vida e fornece resistência temporária (+1N de bônus) contra o próximo teste de doença por resfriado ou gripe.",
+                    "Preço": 20
+                },
+                "Shot de Sorte (Especialidade)": {
+                    "Observação": "Se o jogador perder a aposta, ele sofre um dano simbólico leve (-1 FR).",
+                    "Características": "Uma dose de álcool forte da vila, servida em um copo de gelo.",
+                    "Efeito": "Se consumido antes de uma aposta ou jogo de cartas com Vasly, dá ao jogador uma rolagem de Sorte Extra no teste.",
+                    "Preço": 12
+                },
+                "Tabado Raro": {
+                    "Observação": "Pode adquirir doença grave com o uso excessivo.",
+                    "Características": "Um fumo forte que ajuda a limpar a mente.",
+                    "Efeito": "Ao ser consumido, o usuário consegue relaxar a mente anulando parcialmente ou totalmente os efeitos de transtornos por um curto período que pode variar de 30 minutos a uma hora fora de combate. Dentro de combate pode ser usado para amenizar por 1d5+1 turnos as desvantagens por transtornos ou abalo, quanto mais usar menos tempo vai durar.",
+                    "Preço": 5
+                }
+            },
+            "Vende": {
+                "Fruto da Tundra": {"Valor":"$5 por Unidade"},
+                "Carne de Grolok": {"Valor":"$12 por Unidade"},
+                "Ervas de Concentração": {"Valor":"$10 por Unidade"}
             }
         }
     }
