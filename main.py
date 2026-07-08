@@ -37,6 +37,7 @@ def menu_jogador():
 [1] Status
 [2] Betsuário
 [3] Lojas
+[4] Dado
 [0] Sair
 """)
         
@@ -51,6 +52,9 @@ def menu_jogador():
             elif escolha_jogador == "3":
                 sistemas.lojas.executar()
             
+            elif escolha_jogador == "4":
+                sistemas.dado.executar()
+
             elif escolha_jogador == "0":
                 break
 
@@ -71,6 +75,7 @@ def menu_mestre():
 [2] Betsuário
 [3] Spawn
 [4] Lojas
+[5] Dado
 [0] Sair
 """)
         escolha_mestre = input("Escolha: ").strip()
@@ -86,6 +91,9 @@ def menu_mestre():
 
             elif escolha_mestre == "4":
                 sistemas.lojas.executar()
+
+            elif escolha_mestre == "5":
+                sistemas.dado.executar()
 
             elif escolha_mestre == "0":
                 break
