@@ -1,4 +1,5 @@
 import os
+import time
 
 ### FERRAMENTAS
 
@@ -17,6 +18,11 @@ def sn(mensagem):
 
 def limpar():
     os.system("cls" if os.name == "nt" else "clear")
+
+def anima_carregando():
+    for _ in range(3):
+        time.sleep(1)
+        print(".", end="", flush=True)
 
 ### MAIN
 

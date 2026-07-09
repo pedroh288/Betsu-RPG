@@ -1,6 +1,4 @@
 from random import randint
-import os
-import time
 import re
 import utils
 
@@ -59,10 +57,7 @@ def executar():
             resultado = rolar(expressao)
 
             print("\nRolando os dados", end="", flush=True)
-
-            for _ in range(3):
-                time.sleep(1)
-                print(".", end="", flush=True)
+            utils.anima_carregando()
 
             print(f"\n\033[32mRolagem\033[0m: {expressao}")
             print(f"\033[32mDados\033[0m: {resultado['dados']}")

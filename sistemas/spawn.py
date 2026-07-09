@@ -8,7 +8,7 @@ import utils
 
 def executar():
     while True:
-        utils.menu_spawn
+        utils.menu_spawn()
         caminho = os.path.join(
             os.path.dirname(__file__),
             "..",
@@ -80,113 +80,107 @@ def executar():
             time.sleep(tempo_spawn)
             print("Nada apareceu dessa vez...")
         else:
-            while True:
-                # --- Interação com o Usuário para Escolha de Reino ---
 
-                while True:
-                    print(f"=== \33[36m{"Reino".upper()}\33[0m ===")
-                    for i, nome in enumerate(lista_regioes, start=1):
-                        print(f"[{i}] - {nome}")
-            
-                    print("[0] - Voltar")
+            # --- Interação com o Usuário para Escolha de Reino ---
 
-                    opcao = input("\nEscolha: ")
+            print(f"=== \33[36m{"Reino".upper()}\33[0m ===")
+            for i, nome in enumerate(lista_regioes, start=1):
+                print(f"[{i}] - {nome}")
+    
+            print("[0] - Voltar")
 
-                    if opcao == "0":
-                        print("\nFinalizando o programa!")
-                        return
+            opcao = input("\nEscolha: ")
 
-                    try:
-                        opcao = int(opcao)
-                    except ValueError:
-                        print("Digite apenas números.")
-                        continue
+            if opcao == "0":
+                print("\nFinalizando o programa!")
+                return
 
-                    if opcao < 1 or opcao > len(lista_regioes):
-                        print("Reino inválido.")
-                        continue
+            try:
+                opcao = int(opcao)
+            except ValueError:
+                print("Digite apenas números.")
+                continue
 
-                    reino = lista_regioes[opcao - 1]
-                    break
+            if opcao < 1 or opcao > len(lista_regioes):
+                print("Reino inválido.")
+                continue
 
-                nome_reino = reino
+            reino = lista_regioes[opcao - 1]
 
-                # Escolha do local dentro da região
-                lista_locais = list(regioes[reino].keys())
+            nome_reino = reino
 
-                while True:
-                    print(f"\n=== \33[36mREGIÃO DE {nome_reino.upper()}\33[0m ===")
-                    for i, regiao in enumerate(lista_locais, start=1):
-                        print(f"[{i}] - {regiao}")
+        # Escolha do local dentro da região
+        lista_locais = list(regioes[reino].keys())
 
-                    print("[0] - Sair")
+        print(f"\n=== \33[36mREGIÃO DE {nome_reino.upper()}\33[0m ===")
+        for i, regiao in enumerate(lista_locais, start=1):
+            print(f"[{i}] - {regiao}")
 
-                    opcao_regiao = input("\nEscolha: ")
+        print("[0] - Sair")
 
-                    if opcao_regiao == "0":
-                        print("Finalizando o programa!")
-                        return
+        opcao_regiao = input("\nEscolha: ")
 
-                    try:
-                        opcao_regiao = int(opcao_regiao)
-                    except ValueError:
-                        print("Digite apenas números.")
-                        continue
+        if opcao_regiao == "0":
+            print("Finalizando o programa!")
+            return
 
-                    if opcao_regiao < 1 or opcao_regiao > len(lista_locais):
-                        print("Região inválido.")
-                        continue
+        try:
+            opcao_regiao = int(opcao_regiao)
+        except ValueError:
+            print("Digite apenas números.")
+            continue
 
-                    regiao = lista_locais[opcao_regiao - 1]
-                    break
+        if opcao_regiao < 1 or opcao_regiao > len(lista_locais):
+            print("Região inválido.")
+            continue
 
-                nome_regiao = regiao
+        regiao = lista_locais[opcao_regiao - 1]
 
-                # Escolha do horário
-                while True:
-                    print(f"\n=== \33[36m{"Horário".upper()}\33[0m ===")
-                    print("[1] - Dia")
-                    print("[2] - Noite")
-                    print("[3] - Madrugada")
-                    print("[0] - Sair")
-                    horario_opcao = input("\nEscolha: ")
+        nome_regiao = regiao
 
-                    if horario_opcao == "0":
-                        print("\nFinalizando o programa!")
-                        return
+        # Escolha do horário
 
-                    horarios = {"1": "Dia", "2": "Noite", "3": "Madrugada"}
-                    horario = horarios.get(horario_opcao, None)
+        print(f"\n=== \33[36m{"Horário".upper()}\33[0m ===")
+        print("[1] - Dia")
+        print("[2] - Noite")
+        print("[3] - Madrugada")
+        print("[0] - Sair")
+        horario_opcao = input("\nEscolha: ")
 
-                    if not horario:
-                        print("\nHorário inválido. Reinicie o programa e tente novamente.")
-                        continue
-                    break
+        if horario_opcao == "0":
+            print("\nFinalizando o programa!")
+            return
 
-                print()
-                print('='*20)
+        horarios = {"1": "Dia", "2": "Noite", "3": "Madrugada"}
+        horario = horarios.get(horario_opcao, None)
 
-                # Tempo de espera antes do spawn
-                tempo_espera = 5
-                print(f"Aguarde {tempo_espera} segundos...")
-                time.sleep(tempo_espera)
+        if not horario:
+            print("\nHorário inválido. Reinicie o programa e tente novamente.")
+            continue
+        break
 
-                # Lógica de Spawn
-                monstro_apareceu, raridade = escolher_monstro(reino, regiao, horario)
+    print()
+    print('='*20)
 
-                print('='*30)
-                if monstro_apareceu:
-                    # Pega a cor correspondente à raridade, ou usa a cor padrão (reset)
-                    cor = cores_raridade.get(raridade, "\033[0m")
-                    print(f"\nUm {cor}{monstro_apareceu}\033[0m "
-                    f"({raridade}) apareceu na {nome_regiao} de {nome_reino} durante a {horario}!")
-                else:
-                    print("\nNada apareceu dessa vez...") # Nada apareceu, pois as chances somadas eram 0 ou a roleta não parou em um monstro válido.
-                print()
-                print('='*30)
+    print("\nCarregando inimigo", end="", flush=True)
+    utils.anima_carregando()
 
-                if not utils.sn ("Deseja calcular novamente?"):
-                    return
+    # Lógica de Spawn
+    monstro_apareceu, raridade = escolher_monstro(reino, regiao, horario)
+
+    print('='*30)
+    if monstro_apareceu:
+        # Pega a cor correspondente à raridade, ou usa a cor padrão (reset)
+        cor = cores_raridade.get(raridade, "\033[0m")
+        print(f"\nUm {cor}{monstro_apareceu}\033[0m "
+        f"({raridade}) apareceu na {nome_regiao} de {nome_reino} durante a {horario}!")
+    else:
+        print("\nNada apareceu dessa vez...") # Nada apareceu, pois as chances somadas eram 0 ou a roleta não parou em um monstro válido.
+    print()
+    print('='*30)
+
+    if not utils.sn ("Deseja calcular novamente?"):
+        return
             
 if __name__ == "__main__":
     executar() 
