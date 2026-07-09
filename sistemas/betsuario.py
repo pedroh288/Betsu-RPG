@@ -1,6 +1,6 @@
 import json
 import os
-import utils
+from . import utils
 
 def escolher_opcao(opcoes, titulo):
     print(f"\n=== \33[36m{titulo}ba\33[0m ===")

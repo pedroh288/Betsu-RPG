@@ -4,7 +4,7 @@ import random
 import time
 import os
 import json
-import utils
+from . import utils
 
 def executar():
     while True:

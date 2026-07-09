@@ -1,6 +1,6 @@
 from random import randint
 import re
-import utils
+from . import utils
 
 def rolar(expressao):
     padrao = r"(\d*)d(\d+)([+-]\d+)?"
