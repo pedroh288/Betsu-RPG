@@ -124,6 +124,40 @@ def menu_spawn():
 ********************************************************
           \33[0m""")
 
+def escolher_opcao(opcoes, titulo):
+    """
+    Exibe um menu e retorna a opção escolhida.
+
+    Retorna:
+        - item escolhido
+        - None caso o usuário escolha 0
+    """
+
+    while True:
+        print(f"=== \033[36m{titulo.upper()}\033[0m ===")
+
+        for i, item in enumerate(opcoes, start=1):
+            print(f"[{i}] - {item}")
+
+        print("[0] - Voltar")
+
+        escolha = input("\nEscolha: ").strip()
+
+        if escolha == "0":
+            return None
+
+        try:
+            escolha = int(escolha)
+
+        except ValueError:
+            print("\nDigite apenas números.")
+            continue
+
+        if 1 <= escolha <= len(opcoes):
+            return opcoes[escolha-1]
+
+        print("\nOpção inválida.")
+
 ### STATUS
 
 def menu_status():
