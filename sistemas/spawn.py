@@ -162,7 +162,7 @@ def executar():
     print()
     print('='*20)
 
-    print("\nCarregando inimigo", end="", flush=True)
+    print("Carregando inimigo", end="", flush=True)
     utils.anima_carregando()
 
     # Lógica de Spawn
@@ -179,7 +179,7 @@ def executar():
     print()
     print('='*30)
 
-    if not utils.sn ("Deseja calcular novamente?"):
+    if not utils.sn ("Deseja fazer um novo spawn de ininmigo?"):
         return
             
 if __name__ == "__main__":

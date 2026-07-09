@@ -5,16 +5,21 @@ import time
 
 def sn(mensagem):
     while True:
-        voltar = input(f"\n{mensagem} (s/n): ").lower().strip()
+        try:
+            voltar = input(f"\n{mensagem} (s/n): ").lower().strip()
 
-        if voltar == "s":
-            return True
+            if voltar == "s":
+                return True
 
-        elif voltar == "n":
-            print("\nPrograma encerrado.")
+            elif voltar == "n":
+                print("\nPrograma encerrado.")
+                return False
+
+            print("Digite apenas s ou n.")
+
+        except (KeyboardInterrupt, EOFError):
+            print("\n\nPrograma encerrado.")
             return False
-
-        print("Digite apenas s ou n.")
 
 def limpar():
     os.system("cls" if os.name == "nt" else "clear")
@@ -23,6 +28,8 @@ def anima_carregando():
     for _ in range(3):
         time.sleep(1)
         print(".", end="", flush=True)
+
+    print()
 
 ### MAIN
 
