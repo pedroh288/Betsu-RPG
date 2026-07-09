@@ -2,10 +2,7 @@ from random import randint
 import os
 import time
 import re
-
-def limpar():
-    os.system("cls" if os.name == "nt" else "clear")
-
+import utils
 
 def rolar(expressao):
     padrao = r"(\d*)d(\d+)([+-]\d+)?"
@@ -52,20 +49,7 @@ def rolar(expressao):
 def executar():
     while True:
         try:
-
-            limpar()
-            print("""\33[35m*********************************************
-*                                           *
-*     ██████╗  █████╗ ██████╗  ██████╗      *
-*     ██╔══██╗██╔══██╗██╔══██╗██╔═══██╗     *
-*     ██║  ██║███████║██║  ██║██║   ██║     *
-*     ██║  ██║██╔══██║██║  ██║██║   ██║     *
-*     ██████╔╝██║  ██║██████╔╝╚██████╔╝     *
-*     ╚═════╝ ╚═╝  ╚═╝╚═════╝  ╚═════╝      *
-*                                           *
-*********************************************
- \33[0m""")
-            
+            utils.menu_dado()
             expressao = (input("Digite a rolagem (0 para sair): ")).lower().replace(" ", "")        
 
             if expressao == "0":
@@ -90,18 +74,9 @@ def executar():
             print(f"\033[32mTotal\033[0m: \033[31m{resultado['total']}\033[0m")
 
             print("=" * 30)
-            while True:
-                voltar = input("\nDeseja calcular novamente? (s/n): ").lower().strip()
 
-                if voltar == "s":
-                    limpar()
-                    break
-
-                elif voltar == "n":
-                    print("\nPrograma encerrado.")
-                    return
-
-                print("Digite apenas s ou n.")
+            if not utils.sn ("Deseja calcular novamente?"):
+                return
 
         except ValueError:
             print("\nExpressão inválida.")

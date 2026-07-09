@@ -1,157 +1,135 @@
 import json
 import os
-    
-def limpar():
-    os.system("cls" if os.name == "nt" else "clear")
+import utils
 
 def executar():
-    limpar()
-    print("""\33[35m
-*****************************************************
-*                                                   *
-*     ██╗      ██████╗      ██╗ █████╗ ███████╗     *
-*     ██║     ██╔═══██╗     ██║██╔══██╗██╔════╝     *
-*     ██║     ██║   ██║     ██║███████║███████╗     *
-*     ██║     ██║   ██║██   ██║██╔══██║╚════██║     *
-*     ███████╗╚██████╔╝╚█████╔╝██║  ██║███████║     *
-*     ╚══════╝ ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚══════╝     *
-*                                                   *
-*****************************************************
-          \33[0m""")
+    while True:
+        utils.menu_lojas()
+        caminho = os.path.join(
+            os.path.dirname(__file__),
+            "..",
+            "dados",
+            "lojas.json"
+        )
 
-    caminho = os.path.join(
-        os.path.dirname(__file__),
-        "..",
-        "dados",
-        "lojas.json"
-    )
+        # Carrega o arquivo
+        try:
+            with open(caminho, "r", encoding="utf-8") as arquivo:
+                lojas = json.load(arquivo)
+        except FileNotFoundError:
+            print("Arquivo lojas.json não encontrado")
+            return
+        except json.JSONDecodeError:
+            print("Erro no formato do betsuario.json")
+            return
+        
+        def escolher_opcao(opcoes, titulo):
+            print(f"=== \33[36m{titulo}\33[0m ===")
 
-    # Carrega o arquivo
-    try:
-        with open(caminho, "r", encoding="utf-8") as arquivo:
-            lojas = json.load(arquivo)
-    except FileNotFoundError:
-        print("Arquivo lojas.json não encontrado")
-        return
-    except json.JSONDecodeError:
-        print("Erro no formato do betsuario.json")
-        return
-    
-    def escolher_opcao(opcoes, titulo):
-        print(f"=== \33[36m{titulo}\33[0m ===")
+            lista = list(opcoes)
 
-        lista = list(opcoes)
+            for i, item in enumerate(lista, start=1):
+                print(f"[{i}] {item}")
+                
+            print("[0] Voltar")
 
-        for i, item in enumerate(lista, start=1):
-            print(f"[{i}] {item}")
-            
-        print("[0] Voltar")
+            while True:
+                try:
+                    escolha = int(
+                        input("\nEscolha: ")
+                    )
+
+                    if escolha == 0:
+                        print("\nFinalizando o programa!")
+                        return None
+
+                    if 1 <= escolha <= len(lista):
+                        return lista[escolha - 1]
+
+
+                    print("Opção inválida.")
+
+                except ValueError:
+                    print("Digite apenas números.")
 
         while True:
-            try:
-                escolha = int(
-                    input("\nEscolha: ")
-                )
-
-                if escolha == 0:
-                    print("\nFinalizando o programa!")
-                    return None
-
-                if 1 <= escolha <= len(lista):
-                    return lista[escolha - 1]
-
-
-                print("Opção inválida.")
-
-            except ValueError:
-                print("Digite apenas números.")
-
-    while True:
-        #Reino
-        reino = escolher_opcao(
-            lojas.keys(),
-            "Reinos"
-        )
-
-        if reino is None:
-            return
-
-        # Local
-        local = escolher_opcao(
-            lojas[reino].keys(),
-            "LOCAIS"
-        )
-
-        if local is None:
-            return
-
-        dados_local = lojas[reino][local]
-
-        #limpar()
-
-        # Verifica se existe ação (Comprar, Venda, Fabricar)
-        if any(
-            opcao in dados_local
-            for opcao in ["Comprar", "Venda", "Fabricar"]
-        ):
-
-            acao = escolher_opcao(
-                dados_local.keys(),
-                local.upper()
+            #Reino
+            reino = escolher_opcao(
+                lojas.keys(),
+                "Reinos"
             )
 
-            if acao is None:
-                continue
+            if reino is None:
+                return
 
-            itens = dados_local[acao]
+            # Local
+            local = escolher_opcao(
+                lojas[reino].keys(),
+                "LOCAIS"
+            )
 
-        else:
-            itens = dados_local
+            if local is None:
+                return
 
-        # Item
-        item = escolher_opcao(
-            itens.keys(),
-            "ITENS"
-        )
+            dados_local = lojas[reino][local]
 
-        if item is None:
-            continue
+            #limpar()
 
-        dados = itens[item]
+            # Verifica se existe ação (Comprar, Venda, Fabricar)
+            if any(
+                opcao in dados_local
+                for opcao in ["Comprar", "Venda", "Fabricar"]
+            ):
 
-        #limpar()
+                acao = escolher_opcao(
+                    dados_local.keys(),
+                    local.upper()
+                )
 
-        print("\n" + "=" * 40)
-        print(f"\33[33m{item.upper()}\33[0m")
-        print("=" * 40)
+                if acao is None:
+                    continue
 
-        for chave, valor in dados.items():
-
-            if isinstance(valor, list):
-                print(f"\n{chave}:")
-
-                for item_lista in valor:
-                    print(f" - {item_lista}")
+                itens = dados_local[acao]
 
             else:
-                if chave == "Preço":
-                    print (f"\n{chave}: B${valor}")
-                
+                itens = dados_local
+
+            # Item
+            item = escolher_opcao(
+                itens.keys(),
+                "ITENS"
+            )
+
+            if item is None:
+                continue
+
+            dados = itens[item]
+
+            #limpar()
+
+            print("\n" + "=" * 40)
+            print(f"\33[33m{item.upper()}\33[0m")
+            print("=" * 40)
+
+            for chave, valor in dados.items():
+
+                if isinstance(valor, list):
+                    print(f"\n{chave}:")
+
+                    for item_lista in valor:
+                        print(f" - {item_lista}")
+
                 else:
-                    print(f"\n{chave}: {valor}")
+                    if chave == "Preço":
+                        print (f"\n{chave}: B${valor}")
+                    
+                    else:
+                        print(f"\n{chave}: {valor}")
 
-        print("\n" + "=" * 40)
-    
-        voltar = input(
-            "\nDeseja consultar outro mob? (s/n): "
-            ).lower()
+            print("\n" + "=" * 40)
 
-        if voltar == "s":
-            limpar()
-            continue
-        
-        else:
-            break
+            if not utils.sn ("Deseja ver outra loja?"):
+                return
 
 if __name__ == "__main__":
     executar() 

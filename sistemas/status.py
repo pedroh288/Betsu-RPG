@@ -1,7 +1,4 @@
-import os
-
-def limpar():
-    os.system("cls" if os.name == "nt" else "clear")
+import utils
 
 def escolha(pergunta):
 
@@ -25,23 +22,10 @@ def escolha(pergunta):
 
 
 def executar():
-    limpar()
-    print("""\33[35m
-***************************************************************
-*                                                             *
-*     ███████╗████████╗ █████╗ ████████╗██╗   ██╗███████╗     *
-*     ██╔════╝╚══██╔══╝██╔══██╗╚══██╔══╝██║   ██║██╔════╝     *
-*     ███████╗   ██║   ███████║   ██║   ██║   ██║███████╗     *
-*     ╚════██║   ██║   ██╔══██║   ██║   ██║   ██║╚════██║     *
-*     ███████║   ██║   ██║  ██║   ██║   ╚██████╔╝███████║     *
-*     ╚══════╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝     *
-*                                                             *
-***************************************************************
-          \33[0m""")
-    
-    print('Vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para "Voltar".')
-
     while True:
+        utils.menu_status()
+
+        print('Vamos fazer os devidos cálculos dos ATRIBUTOS do seu personagem!\nDigite [0] a qualquer momento para "Voltar".')
 
         print('\n=== \33[34mINTELIGÊNCIA\33[0m ===')
         I = escolha("Me diga a sua INTELIGÊNCIA\nDigite aqui: ")
@@ -107,16 +91,8 @@ def executar():
         print(f"\33[36mAlcance Mágico\33[0m: \33[32m{am}\33[0m")
         print(f"\33[36mAlcance Físico\33[0m: \33[32m{af}\33[0m")
 
-        voltar = input(
-            "\nDeseja calcular novamente? (s/n): "
-        ).lower()
-
-        if voltar == "s":
-            limpar()
-            continue
-
-        else:
-            break
+        if not utils.sn ("Deseja calcular novamente?"):
+            return
 
 if __name__ == "__main__":
     executar() 
