@@ -38,7 +38,7 @@ def encerrar():
     input("\nPressione ENTER para continuar...")
 
 def menu():
-    VERSAO = "0.1"
+    VERSAO = "1.0.0"
     limpar()
     print(f"""
 >>======================================================<<
